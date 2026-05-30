@@ -1,0 +1,221 @@
+.page {
+  background: var(--surface);
+}
+
+.hero {
+  background: #cfe0ee;
+  padding: 74px 0 56px;
+}
+
+.heroInner,
+.featureGrid,
+.stats,
+.secondaryGrid {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding-left: var(--margin-desktop);
+  padding-right: var(--margin-desktop);
+}
+
+.heroInner {
+  min-height: 250px;
+  display: grid;
+  align-content: center;
+  gap: 18px;
+  max-width: 55rem;
+}
+
+.heroInner h1,
+.cardCopy strong,
+.callout h2 {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  line-height: 0.9;
+  margin: 0;
+}
+
+.heroInner h1 {
+  font-size: clamp(72px, 9vw, 124px);
+}
+
+.heroInner p {
+  margin: 0;
+  max-width: 34rem;
+  font-size: var(--body-md-size);
+  line-height: var(--body-md-line);
+  color: var(--on-surface-variant);
+}
+
+.featureGrid,
+.secondaryGrid {
+  display: grid;
+  grid-template-columns: 1.6fr 0.9fr;
+  gap: 16px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.cardLarge,
+.cardTall,
+.callout {
+  position: relative;
+}
+
+.cardCopy,
+.cardCopyOverlay {
+  position: absolute;
+  left: 18px;
+  right: 18px;
+  bottom: 16px;
+  color: var(--surface);
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.45);
+}
+
+.cardCopy span,
+.cardCopyOverlay span,
+.calloutKicker {
+  display: inline-block;
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  background: rgba(255, 255, 255, 0.92);
+  color: var(--primary);
+  padding: 4px 10px;
+  margin-bottom: 12px;
+}
+
+.cardCopy strong,
+.cardCopyOverlay strong {
+  display: block;
+  font-size: clamp(38px, 4vw, 64px);
+}
+
+.cardCopy p {
+  max-width: 18rem;
+  margin: 6px 0 0;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.cardTall .cardCopyOverlay strong {
+  font-size: clamp(28px, 3vw, 48px);
+}
+
+.stats {
+  border-top: 1px solid var(--outline-variant);
+  border-bottom: 1px solid var(--outline-variant);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.stats > div {
+  padding: 20px 10px;
+  border-right: 1px solid var(--outline-variant);
+}
+
+.stats > div:last-child {
+  border-right: 0;
+}
+
+.stats strong {
+  font-family: var(--font-display);
+  font-size: 48px;
+  line-height: 0.9;
+}
+
+.stats span {
+  display: block;
+  margin-top: 4px;
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.secondaryGrid {
+  grid-template-columns: 1fr 1fr;
+  background: #f3cccc;
+}
+
+.callout {
+  background: var(--primary);
+  color: var(--surface);
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100%;
+}
+
+.calloutKicker {
+  width: fit-content;
+  background: rgba(255, 255, 255, 0.18);
+  color: var(--surface);
+}
+
+.callout h2 {
+  font-size: clamp(46px, 5vw, 78px);
+  max-width: 5ch;
+}
+
+.callout p {
+  max-width: 20rem;
+  font-size: 14px;
+  line-height: 1.65;
+  opacity: 0.8;
+}
+
+.calloutFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding-top: 22px;
+  margin-top: 22px;
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.calloutFooter button {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 0;
+  background: #f6d7d7;
+  color: var(--primary);
+}
+
+@media (max-width: 1000px) {
+  .featureGrid,
+  .secondaryGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .heroInner,
+  .featureGrid,
+  .stats,
+  .secondaryGrid {
+    padding-left: var(--margin-mobile);
+    padding-right: var(--margin-mobile);
+  }
+
+  .featureGrid,
+  .secondaryGrid {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .stats {
+    grid-template-columns: 1fr;
+  }
+
+  .stats > div {
+    border-right: 0;
+    border-bottom: 1px solid var(--outline-variant);
+  }
+
+  .stats > div:last-child {
+    border-bottom: 0;
+  }
+}

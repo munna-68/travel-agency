@@ -1,0 +1,88 @@
+:root {
+  --surface: #fcf9f8;
+  --surface-dim: #dcd9d9;
+  --surface-bright: #fcf9f8;
+  --surface-container-lowest: #ffffff;
+  --surface-container-low: #f6f3f2;
+  --surface-container: #f0eded;
+  --surface-container-high: #eae7e7;
+  --surface-container-highest: #e5e2e1;
+  --on-surface: #1c1b1b;
+  --on-surface-variant: #444748;
+  --inverse-surface: #313030;
+  --inverse-on-surface: #f3f0ef;
+  --outline: #747878;
+  --outline-variant: #c4c7c7;
+  --surface-tint: #5f5e5e;
+  --primary: #000000;
+  --on-primary: #ffffff;
+  --primary-container: #1c1b1b;
+  --on-primary-container: #858383;
+  --inverse-primary: #c8c6c5;
+  --secondary: #50616c;
+  --on-secondary: #ffffff;
+  --secondary-container: #d0e2ef;
+  --on-secondary-container: #546570;
+  --tertiary: #000000;
+  --on-tertiary: #ffffff;
+  --tertiary-container: #2a1616;
+  --on-tertiary-container: #9b7d7b;
+  --error: #ba1a1a;
+  --on-error: #ffffff;
+  --error-container: #ffdad6;
+  --on-error-container: #93000a;
+  --primary-fixed: #e5e2e1;
+  --primary-fixed-dim: #c8c6c5;
+  --on-primary-fixed: #1c1b1b;
+  --on-primary-fixed-variant: #474746;
+  --secondary-fixed: #d3e5f2;
+  --secondary-fixed-dim: #b7c9d6;
+  --on-secondary-fixed: #0c1d27;
+  --on-secondary-fixed-variant: #384953;
+  --tertiary-fixed: #fedad8;
+  --tertiary-fixed-dim: #e1bebd;
+  --on-tertiary-fixed: #2a1616;
+  --on-tertiary-fixed-variant: #594140;
+  --background: #fcf9f8;
+  --on-background: #1c1b1b;
+  --surface-variant: #e5e2e1;
+
+  --font-display: 'Bebas Neue', 'Arial Narrow', sans-serif;
+  --font-body: 'Hanken Grotesk', 'Inter', sans-serif;
+
+  --display-hero-size: 120px;
+  --display-hero-line: 110px;
+  --display-hero-letter: -0.02em;
+  --headline-lg-size: 64px;
+  --headline-lg-line: 60px;
+  --headline-md-size: 48px;
+  --headline-md-line: 48px;
+  --headline-sm-size: 32px;
+  --headline-sm-line: 32px;
+  --body-lg-size: 18px;
+  --body-lg-line: 28px;
+  --body-md-size: 16px;
+  --body-md-line: 24px;
+  --label-caps-size: 12px;
+  --label-caps-line: 16px;
+  --label-caps-letter: 0.1em;
+  --display-hero-mobile-size: 64px;
+  --display-hero-mobile-line: 60px;
+
+  --radius-sm: 0.25rem;
+  --radius: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --radius-full: 9999px;
+
+  --container-max: 1440px;
+  --gutter: 24px;
+  --margin-desktop: 64px;
+  --margin-mobile: 20px;
+  --stack-lg: 80px;
+  --stack-md: 40px;
+  --stack-sm: 12px;
+
+  --shadow-soft: 0 18px 48px rgba(0, 0, 0, 0.12);
+}

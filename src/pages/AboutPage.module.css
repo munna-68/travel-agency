@@ -1,0 +1,287 @@
+.page {
+  background: var(--surface);
+}
+
+.hero {
+  padding: 72px 0 56px;
+  background: var(--surface);
+}
+
+.heroInner,
+.philosophyGrid,
+.stats,
+.sectionHeader,
+.curatorsGrid,
+.ctaSection {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding-left: var(--margin-desktop);
+  padding-right: var(--margin-desktop);
+}
+
+.heroInner {
+  min-height: 300px;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 48px;
+  align-items: end;
+}
+
+.title,
+.sectionHeader h2,
+.philosophyCopy h2,
+.ctaOverlay h2 {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  line-height: 0.9;
+  margin: 0;
+}
+
+.title {
+  font-size: clamp(72px, 9vw, 122px);
+  max-width: 5ch;
+}
+
+.intro {
+  margin: 0;
+  padding-left: 18px;
+  border-left: 1px solid var(--outline);
+  color: var(--on-surface-variant);
+  font-size: var(--body-md-size);
+  line-height: var(--body-md-line);
+  max-width: 29rem;
+}
+
+.philosophy {
+  background: #f9d7d7;
+  padding: 48px 0 32px;
+}
+
+.philosophyGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 0.9fr);
+  gap: 56px;
+  align-items: center;
+}
+
+.philosophyImage {
+  box-shadow: var(--shadow-soft);
+  border-radius: 22px;
+}
+
+.philosophyCopy h2 {
+  font-size: clamp(42px, 4.4vw, 72px);
+  margin-bottom: 18px;
+}
+
+.philosophyCopy p {
+  color: var(--on-surface-variant);
+  line-height: var(--body-lg-line);
+}
+
+.kicker {
+  font-size: var(--label-caps-size);
+  line-height: var(--label-caps-line);
+  letter-spacing: var(--label-caps-letter);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.checklist {
+  list-style: none;
+  padding: 0;
+  margin: 24px 0 0;
+  display: grid;
+  gap: 12px;
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background: var(--surface-container);
+  border-top: 1px solid var(--outline-variant);
+  border-bottom: 1px solid var(--outline-variant);
+}
+
+.stats > div {
+  padding: 18px 18px 16px;
+  border-right: 1px solid var(--outline-variant);
+}
+
+.stats > div:last-child {
+  border-right: 0;
+}
+
+.stats strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 50px;
+  line-height: 0.9;
+}
+
+.stats span {
+  display: block;
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  margin-top: 5px;
+}
+
+.curatorsSection {
+  background: #d6e4f1;
+  padding: 42px 0 48px;
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 32px;
+  margin-bottom: 22px;
+}
+
+.sectionHeader h2 {
+  font-size: clamp(44px, 5vw, 70px);
+}
+
+.sectionHeader p {
+  max-width: 18rem;
+  margin: 0;
+  color: var(--on-surface-variant);
+}
+
+.curatorsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.curatorCard {
+  background: var(--surface-container-lowest);
+  border-radius: 10px;
+  padding: 12px 12px 14px;
+}
+
+.curatorCard :global(img) {
+  border-radius: 6px;
+}
+
+.curatorMeta {
+  padding-top: 10px;
+}
+
+.curatorMeta span {
+  display: block;
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+.curatorMeta strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 28px;
+  line-height: 0.92;
+  margin-top: 6px;
+}
+
+.ctaSection {
+  padding: 52px var(--margin-desktop) 68px;
+}
+
+.ctaImageWrap {
+  position: relative;
+  border-radius: 22px;
+  overflow: hidden;
+}
+
+.ctaImage {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+}
+
+.ctaOverlay {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  gap: 18px;
+  text-align: center;
+  color: var(--on-primary);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.25), transparent 55%);
+}
+
+.ctaOverlay h2 {
+  font-size: clamp(44px, 5vw, 72px);
+  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.3);
+}
+
+.button {
+  background: var(--surface-container-lowest);
+  color: var(--primary);
+  padding: 14px 20px;
+  border-radius: 18px 18px 18px 2px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1000px) {
+  .heroInner,
+  .philosophyGrid,
+  .sectionHeader {
+    grid-template-columns: 1fr;
+    display: grid;
+  }
+
+  .curatorsGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 700px) {
+  .heroInner,
+  .philosophyGrid,
+  .stats,
+  .sectionHeader,
+  .curatorsGrid {
+    padding-left: var(--margin-mobile);
+    padding-right: var(--margin-mobile);
+  }
+
+  .hero {
+    padding-top: 34px;
+  }
+
+  .title {
+    font-size: 72px;
+  }
+
+  .curatorsGrid,
+  .stats {
+    grid-template-columns: 1fr;
+  }
+
+  .stats > div {
+    border-right: 0;
+    border-bottom: 1px solid var(--outline-variant);
+  }
+
+  .stats > div:last-child {
+    border-bottom: 0;
+  }
+
+  .ctaImage {
+    height: 300px;
+  }
+}

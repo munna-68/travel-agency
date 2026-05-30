@@ -1,0 +1,288 @@
+.page {
+  background: #f7d7d7;
+}
+
+.hero {
+  position: relative;
+  background: var(--primary);
+  color: var(--surface);
+}
+
+.heroImage {
+  width: 100%;
+  height: 560px;
+  object-fit: cover;
+  object-position: center center;
+  opacity: 0.98;
+}
+
+.heroText {
+  position: absolute;
+  left: var(--margin-desktop);
+  bottom: 38px;
+  max-width: 42rem;
+}
+
+.heroText p,
+.heroText span,
+.tabsRow span,
+.sideMeta span,
+.smallCard span,
+.newsletterCopy p,
+.newsletterCopy span {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.heroText p {
+  font-size: 12px;
+  margin: 0 0 10px;
+}
+
+.heroText h1 {
+  margin: 0 0 10px;
+  font-family: var(--font-display);
+  font-size: clamp(44px, 5vw, 76px);
+  line-height: 0.88;
+}
+
+.heroText span {
+  display: block;
+  max-width: 32rem;
+  font-size: 18px;
+  line-height: 1.5;
+  text-transform: none;
+  letter-spacing: 0;
+  opacity: 0.88;
+}
+
+.tabsRow,
+.featureArea,
+.moreGrid,
+.discover,
+.newsletter {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding-left: var(--margin-desktop);
+  padding-right: var(--margin-desktop);
+}
+
+.tabsRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: center;
+  padding-top: 36px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(28, 27, 27, 0.12);
+}
+
+.tabsRow nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 26px;
+}
+
+.tabsRow a {
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  opacity: 0.9;
+}
+
+.active {
+  border-bottom: 1px solid currentColor;
+}
+
+.featureArea {
+  display: grid;
+  grid-template-columns: 1.9fr 1fr;
+  gap: 18px;
+  padding-top: 28px;
+  padding-bottom: 38px;
+}
+
+.featureMeta {
+  padding-top: 14px;
+}
+
+.featureMeta span,
+.featureMeta p,
+.sideMeta span,
+.smallCard span,
+.newsletterCopy p {
+  font-size: 12px;
+}
+
+.featureMeta h2,
+.sideMeta h3,
+.smallCard h3,
+.quoteCard strong,
+.newsletterCopy p {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  line-height: 0.92;
+}
+
+.featureMeta h2 {
+  margin: 8px 0 12px;
+  font-size: clamp(28px, 2.8vw, 40px);
+}
+
+.featureMeta p:last-child {
+  margin: 0;
+  max-width: 40rem;
+  line-height: 1.6;
+  color: var(--on-surface-variant);
+}
+
+.sideMeta {
+  padding-top: 14px;
+}
+
+.sideMeta h3,
+.smallCard h3 {
+  margin: 8px 0 0;
+  font-size: clamp(20px, 2vw, 28px);
+}
+
+.moreGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+
+.quoteCard {
+  background: var(--primary);
+  color: var(--surface);
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100%;
+}
+
+.quoteMark {
+  font-family: var(--font-display);
+  font-size: 34px;
+}
+
+.quoteCard blockquote {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  max-width: 13ch;
+}
+
+.quoteCard strong {
+  font-size: 20px;
+  line-height: 1.1;
+}
+
+.discover {
+  text-align: center;
+  padding-bottom: 42px;
+}
+
+.discover a {
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.newsletter {
+  background: var(--primary);
+  color: var(--surface);
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 40px;
+  padding-top: 44px;
+  padding-bottom: 44px;
+}
+
+.newsletterCopy p {
+  margin: 0 0 14px;
+  font-size: 18px;
+}
+
+.newsletterCopy span {
+  display: block;
+  max-width: 30rem;
+  line-height: 1.6;
+  opacity: 0.82;
+}
+
+.form {
+  display: grid;
+  gap: 16px;
+  align-content: start;
+}
+
+.form label {
+  display: grid;
+  gap: 10px;
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.form input[type='email'] {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.68);
+  color: inherit;
+  padding: 10px 0;
+}
+
+.form button {
+  justify-self: end;
+  border: 0;
+  background: var(--surface);
+  color: var(--primary);
+  padding: 14px 20px;
+  border-radius: 0 0 18px 0;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.checkRow {
+  display: flex !important;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px !important;
+  letter-spacing: 0.06em !important;
+  text-transform: none !important;
+  opacity: 0.72;
+}
+
+@media (max-width: 1000px) {
+  .featureArea,
+  .moreGrid,
+  .newsletter {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .heroText,
+  .tabsRow,
+  .featureArea,
+  .moreGrid,
+  .discover,
+  .newsletter {
+    padding-left: var(--margin-mobile);
+    padding-right: var(--margin-mobile);
+  }
+
+  .tabsRow {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .heroImage {
+    height: 420px;
+  }
+}
