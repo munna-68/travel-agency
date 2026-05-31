@@ -1,14 +1,18 @@
-import styles from './Footer.module.css';
+import styles from "./Footer.module.css";
 
-const footerLinks = ['Privacy Policy', 'Terms of Service', 'Contact Us', 'Press Kit'];
+const footerLinks = [
+  "Privacy Policy",
+  "Terms of Service",
+  "Contact Us",
+  "Press Kit",
+];
 
-export default function Footer({ variant = 'light' }) {
+export default function Footer() {
   return (
-    <footer className={styles.footer} data-variant={variant}>
+    <footer className={styles.footer}>
       <div className={styles.inner}>
         <div className={styles.brandBlock}>
           <div className={styles.brand}>LOCAL EXPLORER</div>
-          <p className={styles.copy}>Curating meaningful journeys for the modern wanderer since 2012.</p>
         </div>
 
         <nav className={styles.links} aria-label="Footer">

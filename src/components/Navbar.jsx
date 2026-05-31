@@ -1,21 +1,24 @@
-import { NavLink, useLocation } from 'react-router-dom';
-import styles from './Navbar.module.css';
+import { NavLink } from "react-router-dom";
+import styles from "./Navbar.module.css";
 
 const links = [
-  { to: '/destinations', label: 'Destinations' },
-  { to: '/tours', label: 'Tours' },
-  { to: '/about', label: 'About' },
-  { to: '/journal', label: 'Journal' },
+  { to: "/", label: "Home", end: true },
+  { to: "/about", label: "About" },
+  { to: "/destinations", label: "Destinations" },
+  { to: "/tours", label: "Tours" },
+  { to: "/journal", label: "Journal" },
+  { to: "/editorial", label: "Editorial" },
 ];
 
-export default function Navbar({ theme = 'light' }) {
-  const location = useLocation();
-  const isEditorial = location.pathname === '/editorial';
-
+export default function Navbar() {
   return (
-    <header className={styles.header} data-theme={theme} data-editorial={isEditorial || undefined}>
+    <header className={styles.header}>
       <div className={styles.inner}>
-        <NavLink to="/" className={styles.brand} aria-label="Local Explorer home">
+        <NavLink
+          to="/"
+          className={styles.brand}
+          aria-label="Local Explorer home"
+        >
           LOCAL
           <br />
           EXPLORER
@@ -26,7 +29,10 @@ export default function Navbar({ theme = 'light' }) {
             <NavLink
               key={link.to}
               to={link.to}
-              className={({ isActive }) => `${styles.link} ${isActive ? styles.active : ''}`}
+              end={link.end}
+              className={({ isActive }) =>
+                `${styles.link} ${isActive ? styles.active : ""}`
+              }
             >
               {link.label}
             </NavLink>
@@ -35,8 +41,7 @@ export default function Navbar({ theme = 'light' }) {
 
         <div className={styles.actions}>
           <button className={styles.pill} type="button">
-            {isEditorial ? 'BOOK NOW' : 'LANGUAGE'}
-            {isEditorial ? ' →' : ''}
+            LANGUAGE
           </button>
           <button className={styles.menu} type="button" aria-label="Open menu">
             <span />

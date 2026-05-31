@@ -1,22 +1,22 @@
-import { Navigate, Route, Routes } from 'react-router-dom';
-import Layout from './components/Layout';
-import HomePage from './pages/HomePage';
-import AboutPage from './pages/AboutPage';
-import DestinationsPage from './pages/DestinationsPage';
-import ToursPage from './pages/ToursPage';
-import JournalPage from './pages/JournalPage';
-import EditorialPage from './pages/EditorialPage';
+import { Navigate, Route, Routes } from "react-router-dom";
+import Layout from "./components/Layout";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Destinations from "./pages/Destinations";
+import Tours from "./pages/Tours";
+import Journal from "./pages/Journal";
+import Editorial from "./pages/Editorial";
 
 export default function App() {
   return (
     <Routes>
       <Route element={<Layout />}>
-        <Route index element={<HomePage />} />
-        <Route path="about" element={<AboutPage />} />
-        <Route path="destinations" element={<DestinationsPage />} />
-        <Route path="tours" element={<ToursPage />} />
-        <Route path="journal" element={<JournalPage />} />
-        <Route path="editorial" element={<EditorialPage />} />
+        <Route index element={<Home />} />
+        <Route path="about" element={<About />} />
+        <Route path="destinations" element={<Destinations />} />
+        <Route path="tours" element={<Tours />} />
+        <Route path="journal" element={<Journal />} />
+        <Route path="editorial" element={<Editorial />} />
       </Route>
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>

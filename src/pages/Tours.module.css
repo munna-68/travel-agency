@@ -1,0 +1,347 @@
+.page {
+  background: var(--surface);
+}
+
+.content {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding-left: var(--margin-desktop);
+  padding-right: var(--margin-desktop);
+}
+
+.hero {
+  background: var(--surface-container-lowest);
+  padding: 82px 0 70px;
+}
+
+.heroGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: end;
+  gap: var(--stack-lg);
+}
+
+.kicker,
+.cardTag,
+.cardPlace,
+.metaRow dt,
+.customLink,
+.filterButton,
+.ctaButton {
+  font-family: var(--label-caps-font-family);
+  font-size: var(--label-caps-font-size);
+  line-height: var(--label-caps-line-height);
+  font-weight: var(--label-caps-font-weight);
+  letter-spacing: var(--label-caps-letter-spacing);
+  text-transform: uppercase;
+}
+
+.kicker {
+  display: inline-block;
+  padding: 4px 10px 3px;
+  background: var(--primary);
+  color: var(--on-primary);
+  border-radius: var(--radius-sm);
+  margin-bottom: 18px;
+}
+
+.heroTitle {
+  margin: 0;
+  font-family: var(--headline-lg-font-family);
+  font-size: 72px;
+  line-height: 0.84;
+  text-transform: uppercase;
+}
+
+.heroTitle span {
+  display: block;
+}
+
+.outline {
+  color: transparent;
+  -webkit-text-stroke: 1.5px var(--on-surface);
+  text-stroke: 1.5px var(--on-surface);
+}
+
+.heroCopy {
+  margin: 18px 0 0;
+  max-width: 470px;
+  padding-left: 18px;
+  border-left: 1px solid var(--outline);
+  color: var(--on-surface-variant);
+  font-family: var(--body-md-font-family);
+  font-size: var(--body-md-font-size);
+  line-height: var(--body-md-line-height);
+}
+
+.heroStat {
+  text-align: right;
+  padding-bottom: 16px;
+}
+
+.heroStat strong {
+  display: block;
+  font-family: var(--headline-sm-font-family);
+  font-size: 40px;
+  line-height: 1;
+}
+
+.heroStat span {
+  display: block;
+  margin-top: 8px;
+  font-family: var(--label-caps-font-family);
+  font-size: 10px;
+  line-height: 14px;
+  letter-spacing: 0.16em;
+}
+
+.filtersSection {
+  background: var(--surface-container-lowest);
+  border-top: 1px solid var(--surface-container);
+  border-bottom: 1px solid var(--surface-container);
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 26px 0;
+}
+
+.filterButton {
+  border: 1px solid var(--outline-variant);
+  border-radius: var(--radius-full);
+  background: transparent;
+  color: var(--on-surface);
+  padding: 9px 18px;
+}
+
+.filterActive {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: var(--on-primary);
+}
+
+.gallery {
+  background: var(--surface-container-lowest);
+  padding: 58px 0 var(--stack-lg);
+}
+
+.tourGrid,
+.tourGridCompact,
+.bottomGrid {
+  display: grid;
+  gap: 16px;
+}
+
+.tourGrid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.tourGridCompact {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.bottomGrid {
+  grid-template-columns: minmax(0, 1.95fr) minmax(290px, 0.95fr);
+  margin-top: 16px;
+}
+
+.tourCard {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.65rem;
+  aspect-ratio: 0.78;
+  background: var(--surface-container-highest);
+}
+
+.cardImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: grayscale(1);
+}
+
+.cardTag {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  padding: 4px 10px 3px;
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--on-surface);
+  border-radius: var(--radius-sm);
+}
+
+.cardOverlay {
+  position: absolute;
+  inset: auto 0 0;
+  padding: 20px 18px 18px;
+  color: var(--on-primary);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.62) 46%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+}
+
+.cardPlace {
+  color: rgba(255, 255, 255, 0.84);
+}
+
+.cardTitle {
+  margin: 10px 0 18px;
+  font-family: var(--headline-sm-font-family);
+  font-size: 36px;
+  line-height: 0.92;
+  text-transform: uppercase;
+}
+
+.metaRow {
+  margin: 0;
+  display: flex;
+  gap: 18px;
+}
+
+.metaRow div {
+  min-width: 0;
+}
+
+.metaRow dt {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.metaRow dd {
+  margin: 4px 0 0;
+  font-family: var(--headline-sm-font-family);
+  font-size: 18px;
+  line-height: 1;
+}
+
+.cardButton {
+  margin-top: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  padding: 0 18px;
+  border-radius: var(--radius-full);
+  background: var(--primary);
+  color: var(--on-primary);
+  font-family: var(--label-caps-font-family);
+  font-size: var(--label-caps-font-size);
+  line-height: var(--label-caps-line-height);
+  font-weight: var(--label-caps-font-weight);
+  letter-spacing: var(--label-caps-letter-spacing);
+}
+
+.customCard {
+  background: var(--primary);
+  color: var(--on-primary);
+  border-radius: 0.65rem;
+  padding: 26px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.customIcon {
+  width: 44px;
+  height: 44px;
+  border: 4px solid rgba(255, 255, 255, 0.88);
+  border-radius: 9999px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 24px;
+}
+
+.customIcon span {
+  width: 14px;
+  height: 14px;
+  border: 3px solid rgba(255, 255, 255, 0.88);
+  border-radius: 3px;
+  transform: rotate(45deg);
+}
+
+.customTitle {
+  margin: 0;
+  max-width: 220px;
+  font-family: var(--headline-sm-font-family);
+  font-size: 54px;
+  line-height: 0.88;
+  text-transform: uppercase;
+}
+
+.customCopy {
+  margin: 20px 0 0;
+  max-width: 240px;
+  color: rgba(255, 255, 255, 0.72);
+  font-family: var(--body-md-font-family);
+  font-size: var(--body-md-font-size);
+  line-height: var(--body-md-line-height);
+}
+
+.customLink {
+  margin-top: 28px;
+  color: var(--on-primary);
+}
+
+.ctaBand {
+  background: var(--secondary-container);
+  padding: 58px 0 64px;
+  text-align: center;
+}
+
+.ctaBand h2 {
+  margin: 0;
+  font-family: var(--headline-sm-font-family);
+  font-size: 46px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: var(--on-surface-variant);
+}
+
+.ctaButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 24px;
+  min-height: 46px;
+  padding: 0 24px;
+  border-radius: 14px 14px 18px 18px;
+  background: var(--primary);
+  color: var(--on-primary);
+}
+
+@media (max-width: 1100px) {
+  .heroGrid,
+  .bottomGrid,
+  .tourGrid,
+  .tourGridCompact {
+    grid-template-columns: 1fr;
+  }
+
+  .customCard {
+    min-height: 320px;
+  }
+}
+
+@media (max-width: 700px) {
+  .content {
+    padding-left: var(--margin-mobile);
+    padding-right: var(--margin-mobile);
+  }
+
+  .heroTitle {
+    font-size: 56px;
+  }
+
+  .customTitle {
+    font-size: 44px;
+  }
+
+  .ctaBand h2 {
+    font-size: 36px;
+  }
+}

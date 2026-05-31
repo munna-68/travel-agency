@@ -46,36 +46,46 @@
   --background: #fcf9f8;
   --on-background: #1c1b1b;
   --surface-variant: #e5e2e1;
-
-  --font-display: 'Bebas Neue', 'Arial Narrow', sans-serif;
-  --font-body: 'Hanken Grotesk', 'Inter', sans-serif;
-
-  --display-hero-size: 120px;
-  --display-hero-line: 110px;
-  --display-hero-letter: -0.02em;
-  --headline-lg-size: 64px;
-  --headline-lg-line: 60px;
-  --headline-md-size: 48px;
-  --headline-md-line: 48px;
-  --headline-sm-size: 32px;
-  --headline-sm-line: 32px;
-  --body-lg-size: 18px;
-  --body-lg-line: 28px;
-  --body-md-size: 16px;
-  --body-md-line: 24px;
-  --label-caps-size: 12px;
-  --label-caps-line: 16px;
-  --label-caps-letter: 0.1em;
-  --display-hero-mobile-size: 64px;
-  --display-hero-mobile-line: 60px;
-
+  --display-hero-font-family: "Bebas Neue";
+  --display-hero-font-size: 120px;
+  --display-hero-font-weight: 400;
+  --display-hero-line-height: 110px;
+  --display-hero-letter-spacing: -0.02em;
+  --headline-lg-font-family: "Bebas Neue";
+  --headline-lg-font-size: 64px;
+  --headline-lg-font-weight: 400;
+  --headline-lg-line-height: 60px;
+  --headline-md-font-family: "Bebas Neue";
+  --headline-md-font-size: 48px;
+  --headline-md-font-weight: 400;
+  --headline-md-line-height: 48px;
+  --headline-sm-font-family: "Bebas Neue";
+  --headline-sm-font-size: 32px;
+  --headline-sm-font-weight: 400;
+  --headline-sm-line-height: 32px;
+  --body-lg-font-family: "Hanken Grotesk";
+  --body-lg-font-size: 18px;
+  --body-lg-font-weight: 400;
+  --body-lg-line-height: 28px;
+  --body-md-font-family: "Hanken Grotesk";
+  --body-md-font-size: 16px;
+  --body-md-font-weight: 400;
+  --body-md-line-height: 24px;
+  --label-caps-font-family: "Hanken Grotesk";
+  --label-caps-font-size: 12px;
+  --label-caps-font-weight: 700;
+  --label-caps-line-height: 16px;
+  --label-caps-letter-spacing: 0.1em;
+  --display-hero-mobile-font-family: "Bebas Neue";
+  --display-hero-mobile-font-size: 64px;
+  --display-hero-mobile-font-weight: 400;
+  --display-hero-mobile-line-height: 60px;
   --radius-sm: 0.25rem;
-  --radius: 0.5rem;
+  --radius-default: 0.5rem;
   --radius-md: 0.75rem;
   --radius-lg: 1rem;
   --radius-xl: 1.5rem;
   --radius-full: 9999px;
-
   --container-max: 1440px;
   --gutter: 24px;
   --margin-desktop: 64px;
@@ -83,6 +93,4 @@
   --stack-lg: 80px;
   --stack-md: 40px;
   --stack-sm: 12px;
-
-  --shadow-soft: 0 18px 48px rgba(0, 0, 0, 0.12);
 }

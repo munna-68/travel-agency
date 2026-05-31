@@ -1,22 +1,17 @@
 .footer {
   border-top: 1px solid var(--outline-variant);
   background: var(--surface-container-lowest);
-}
-
-.footer[data-variant='dark'] {
-  background: var(--primary);
-  color: var(--surface);
-  border-top-color: rgba(255, 255, 255, 0.14);
+  color: var(--on-background);
 }
 
 .inner {
   max-width: var(--container-max);
   margin: 0 auto;
-  padding: 28px var(--margin-desktop) 34px;
+  padding: 28px var(--margin-desktop) 32px;
   display: flex;
   justify-content: space-between;
   gap: 32px;
-  align-items: flex-end;
+  align-items: center;
 }
 
 .brandBlock {
@@ -24,17 +19,12 @@
 }
 
 .brand {
-  font-family: var(--font-display);
-  font-size: 28px;
-  line-height: 0.82;
-}
-
-.copy {
-  margin: 16px 0 0;
-  font-size: 14px;
-  line-height: 1.6;
-  color: inherit;
-  opacity: 0.75;
+  font-family: var(--body-lg-font-family);
+  font-size: var(--body-md-font-size);
+  line-height: var(--body-md-line-height);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .links {
@@ -42,9 +32,11 @@
   flex-wrap: wrap;
   justify-content: flex-end;
   gap: 24px;
-  font-size: 13px;
+  font-family: var(--body-md-font-family);
+  font-size: var(--body-md-font-size);
+  line-height: var(--body-md-line-height);
   color: inherit;
-  opacity: 0.82;
+  opacity: 0.8;
 }
 
 @media (max-width: 900px) {

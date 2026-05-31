@@ -1,0 +1,340 @@
+.page {
+  background: var(--surface);
+}
+
+.hero,
+.philosophy,
+.stats,
+.curators,
+.story {
+  width: 100%;
+}
+
+.heroInner,
+.philosophyInner,
+.curatorsInner,
+.storyCard,
+.statsGrid {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding-left: var(--margin-desktop);
+  padding-right: var(--margin-desktop);
+}
+
+.hero {
+  background: var(--surface-container-lowest);
+  padding-top: 116px;
+  padding-bottom: 72px;
+}
+
+.heroInner {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
+  align-items: end;
+  gap: var(--stack-lg);
+}
+
+.heroTitle,
+.sectionTitle,
+.storyTitle {
+  margin: 0;
+  font-family: var(--headline-lg-font-family);
+  font-weight: var(--headline-lg-font-weight);
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  line-height: 0.84;
+}
+
+.heroTitle {
+  font-size: 72px;
+}
+
+.heroTitle span {
+  display: block;
+}
+
+.heroCopy {
+  margin: 0;
+  padding-left: 22px;
+  border-left: 1px solid var(--outline);
+  color: var(--on-surface-variant);
+  font-family: var(--body-md-font-family);
+  font-size: var(--body-md-font-size);
+  line-height: var(--body-md-line-height);
+  max-width: 420px;
+}
+
+.philosophy {
+  background: var(--error-container);
+  padding: var(--stack-lg) 0;
+}
+
+.philosophyInner {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(320px, 1fr);
+  gap: var(--stack-lg);
+  align-items: center;
+}
+
+.philosophyImage {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 0.9rem;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+}
+
+.philosophyContent {
+  padding-right: 10px;
+}
+
+.sectionTitle {
+  font-size: 56px;
+  margin-bottom: 28px;
+}
+
+.body {
+  margin: 0 0 16px;
+  color: var(--on-surface);
+  font-family: var(--body-md-font-family);
+  font-size: var(--body-md-font-size);
+  line-height: var(--body-md-line-height);
+  max-width: 420px;
+}
+
+.values {
+  list-style: none;
+  padding: 14px 0 0;
+  margin: 22px 0 0;
+  display: grid;
+  gap: 10px;
+}
+
+.values li {
+  position: relative;
+  padding-left: 26px;
+  font-family: var(--label-caps-font-family);
+  font-size: var(--label-caps-font-size);
+  line-height: var(--label-caps-line-height);
+  font-weight: var(--label-caps-font-weight);
+  letter-spacing: var(--label-caps-letter-spacing);
+}
+
+.values li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 14px;
+  height: 14px;
+  border-radius: 9999px;
+  border: 1px solid var(--on-surface);
+}
+
+.stats {
+  background: var(--surface-container-lowest);
+  border-top: 1px solid var(--outline-variant);
+  border-bottom: 1px solid var(--outline-variant);
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.statItem {
+  padding: 22px 0 20px;
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  border-right: 1px solid var(--outline-variant);
+}
+
+.statItem:last-child {
+  border-right: 0;
+}
+
+.statItem dt {
+  margin: 0;
+  font-family: var(--headline-sm-font-family);
+  font-size: 40px;
+  line-height: 1;
+}
+
+.statItem dd {
+  margin: 0;
+  font-family: var(--label-caps-font-family);
+  font-size: var(--label-caps-font-size);
+  line-height: var(--label-caps-line-height);
+  letter-spacing: var(--label-caps-letter-spacing);
+}
+
+.curators {
+  background: var(--secondary-container);
+  padding: var(--stack-lg) 0;
+}
+
+.curatorsHeader {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 0.6fr);
+  gap: var(--stack-md);
+  align-items: end;
+  margin-bottom: 26px;
+}
+
+.curatorsIntro {
+  margin: 0;
+  color: var(--on-surface-variant);
+  font-family: var(--body-md-font-family);
+  font-size: var(--body-md-font-size);
+  line-height: var(--body-md-line-height);
+  max-width: 320px;
+}
+
+.curatorGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.curatorCard {
+  background: var(--surface-container-lowest);
+  border-radius: 0.6rem;
+  padding: 14px 14px 16px;
+}
+
+.curatorImage {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border-radius: 0.45rem;
+}
+
+.curatorRole {
+  margin: 12px 0 4px;
+  font-family: var(--label-caps-font-family);
+  font-size: 10px;
+  line-height: 14px;
+  letter-spacing: 0.08em;
+}
+
+.curatorName {
+  margin: 0;
+  font-family: var(--body-lg-font-family);
+  font-size: 18px;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.story {
+  background: var(--surface-container-lowest);
+  padding: var(--stack-lg) 0 90px;
+}
+
+.storyCard {
+  position: relative;
+}
+
+.storyImage {
+  width: 100%;
+  aspect-ratio: 18 / 7;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.storyOverlay {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  gap: 18px;
+  text-align: center;
+  padding: 24px;
+}
+
+.storyTitle {
+  font-size: 48px;
+  color: var(--on-primary);
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
+}
+
+.storyButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0 22px;
+  border-radius: var(--radius-full);
+  background: var(--surface-container-lowest);
+  color: var(--on-surface);
+  font-family: var(--label-caps-font-family);
+  font-size: var(--label-caps-font-size);
+  line-height: var(--label-caps-line-height);
+  font-weight: var(--label-caps-font-weight);
+  letter-spacing: var(--label-caps-letter-spacing);
+}
+
+@media (max-width: 1100px) {
+  .heroInner,
+  .philosophyInner,
+  .curatorsHeader {
+    grid-template-columns: 1fr;
+  }
+
+  .curatorGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .statsGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .statItem:nth-child(2n) {
+    border-right: 0;
+  }
+
+  .storyImage {
+    aspect-ratio: 16 / 9;
+  }
+}
+
+@media (max-width: 700px) {
+  .hero,
+  .philosophy,
+  .curators,
+  .story {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  .heroInner,
+  .philosophyInner,
+  .curatorsInner,
+  .storyCard,
+  .statsGrid {
+    padding-left: var(--margin-mobile);
+    padding-right: var(--margin-mobile);
+  }
+
+  .heroTitle {
+    font-size: 56px;
+  }
+
+  .sectionTitle {
+    font-size: 44px;
+  }
+
+  .statsGrid,
+  .curatorGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .statItem {
+    border-right: 0;
+    border-bottom: 1px solid var(--outline-variant);
+  }
+
+  .statItem:last-child {
+    border-bottom: 0;
+  }
+}

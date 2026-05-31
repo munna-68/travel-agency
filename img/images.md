@@ -1,0 +1,27 @@
+# Image Placeholders
+
+- hero-landing.svg — 1600:2400 — Tall hero image placeholder for the landing page mountain scene.
+- about-philosophy.svg — 1200:1500 — Portrait placeholder for the philosophy image beside the About section copy.
+- curator-marcus.svg — 900:1200 — Portrait placeholder for Marcus Thorne's curator card.
+- curator-elena.svg — 900:1200 — Portrait placeholder for Elena Rossi's curator card.
+- curator-siddharth.svg — 900:1200 — Portrait placeholder for Siddharth Mehta's curator card.
+- curator-chloe.svg — 900:1200 — Portrait placeholder for Chloe Chen's curator card.
+- about-story.svg — 1800:1000 — Wide landscape placeholder for the About page call-to-action banner.
+- kyoto-autumn-path.svg — 1600:1000 — Landscape placeholder for the Kyoto destination feature card.
+- montana-glacier-valley.svg — 1200:1600 — Tall portrait placeholder for the Montana destination card.
+- guilin-emerald-curve.svg — 1400:1400 — Square placeholder for the Guilin expedition card.
+- tours-zen-pathway.svg — 900:1200 — Portrait placeholder for the Kyoto tour card.
+- tours-karst-frontier.svg — 900:1200 — Portrait placeholder for the Guilin tour card.
+- tours-summit-serenity.svg — 900:1200 — Portrait placeholder for the Banff tour card.
+- tours-aegean-flavors.svg — 900:1200 — Portrait placeholder for the Santorini tour card.
+- tours-coastal-highway.svg — 900:1200 — Portrait placeholder for the California tour card.
+- journal-hero-valley.svg — 1600:900 — Wide landscape placeholder for the editorial-style hero image on the Journal page.
+- journal-kyoto-story.svg — 1400:900 — Wide article placeholder for the Kyoto story feature card.
+- journal-paris-cafe.svg — 900:1200 — Portrait placeholder for the Paris cafes feature card.
+- journal-canadian-rockies.svg — 900:1200 — Portrait placeholder for the Canadian Rockies feature card.
+- journal-santorini-domes.svg — 900:1200 — Portrait placeholder for the Santorini domes feature card.
+- editorial-hero-valley.svg — 1600:900 — Wide landscape placeholder for the editorial hero valley image.
+- editorial-kyoto-story.svg — 1400:900 — Wide article placeholder for the editorial Kyoto story feature card.
+- editorial-paris-cafe.svg — 900:1200 — Portrait placeholder for the editorial Paris cafes feature card.
+- editorial-canadian-rockies.svg — 900:1200 — Portrait placeholder for the editorial Canadian Rockies feature card.
+- editorial-santorini-domes.svg — 900:1200 — Portrait placeholder for the editorial Santorini domes feature card.
