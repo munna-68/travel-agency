@@ -191,8 +191,27 @@
 
 .heroTab:focus,
 .heroTab:hover {
-  background: rgba(255,255,255,0.14);
+  background: rgba(255, 255, 255, 0.14);
   color: var(--on-surface);
+}
+.heroCTA {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 40px;
+  z-index: 3;
+}
+
+.heroCTA a {
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 999px;
+  font-family: var(--label-caps-font-family);
+  font-size: 14px;
+  letter-spacing: var(--label-caps-letter-spacing);
+  text-decoration: none;
 }
 
 .statsSection {

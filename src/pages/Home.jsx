@@ -29,44 +29,16 @@ export default function Home() {
     <main className={styles.page}>
       <section className={styles.hero} aria-label="Local Explorer landing hero">
         <div className={styles.heroInner}>
-          <div className={styles.heroCopy}>
-            <div className={styles.kicker}>LOCAL EXPLORER / SEASON 2024</div>
-            <h1>
-              <span>THE MAP STARTS</span>
-              <span className={styles.outline}>HERE</span>
-            </h1>
-            <p>
-              Curated travel for people who want the journey to feel authored,
-              cinematic, and rooted in place.
-            </p>
-
-            <div className={styles.actions}>
-              <a className={styles.primaryAction} href="/destinations">
-                EXPLORE ROUTES →
-              </a>
-              <a className={styles.secondaryAction} href="/about">
-                OUR APPROACH
-              </a>
-            </div>
-          </div>
-
           <div className={styles.heroVisual}>
             <img
               className={styles.heroImage}
               src="/img/hero-landing.svg"
               alt=""
             />
-            <div className={styles.heroCaption}>
-              <span>Mountain atmosphere</span>
-              <span>Analog pace</span>
+            <div className={styles.heroCTA}>
+              <a href="/destinations">Explore our routes →</a>
             </div>
           </div>
-        </div>
-
-        <div className={styles.heroTabs} role="tablist" aria-label="Hero sections">
-          <a className={`${styles.heroTab} ${styles.heroTabActive}`} href="/destinations" aria-selected="true">Destinations</a>
-          <a className={styles.heroTab} href="/tours">Tours</a>
-          <a className={styles.heroTab} href="/journal">Journal</a>
         </div>
       </section>
 
