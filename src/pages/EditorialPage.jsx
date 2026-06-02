@@ -1,7 +1,8 @@
 import styles from "./EditorialPage.module.css";
-import heroImage from "../assets/editorial/screen.png";
 import CropImage from "../components/CropImage";
 import NavLink from "../components/NavLink";
+
+const heroImage = "/img/screen/editorial/screen.png";
 
 export default function EditorialPage() {
   return (

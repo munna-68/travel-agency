@@ -1,7 +1,8 @@
 import styles from "./JournalPage.module.css";
-import heroImage from "../assets/journal/screen.png";
 import CropImage from "../components/CropImage";
 import NavLink from "../components/NavLink";
+
+const heroImage = "/img/screen/journal/screen.png";
 
 export default function JournalPage() {
   return (

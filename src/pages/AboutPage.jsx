@@ -1,7 +1,8 @@
 import styles from "./AboutPage.module.css";
-import heroImage from "../assets/about/screen.png";
 import CropImage from "../components/CropImage";
 import NavLink from "../components/NavLink";
+
+const heroImage = "/img/screen/about/screen.png";
 
 const curators = [
   { name: "Marcus Thorne", role: "Founder & CEO", position: "18% 58%" },

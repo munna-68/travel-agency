@@ -1,6 +1,7 @@
 import styles from "./DestinationsPage.module.css";
-import heroImage from "../assets/destinations/screen.png";
 import CropImage from "../components/CropImage";
+
+const heroImage = "/img/screen/destinations/screen.png";
 
 export default function DestinationsPage() {
   return (

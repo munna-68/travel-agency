@@ -1,5 +1,6 @@
 import styles from "./HomePage.module.css";
-import heroImage from "../assets/home/screen.png";
+
+const heroImage = "/img/screen/home/screen.png";
 
 export default function HomePage() {
   return (

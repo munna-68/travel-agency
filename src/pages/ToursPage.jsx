@@ -1,7 +1,8 @@
 import styles from "./ToursPage.module.css";
-import heroImage from "../assets/tours/screen.png";
 import CropImage from "../components/CropImage";
 import NavLink from "../components/NavLink";
+
+const heroImage = "/img/screen/tours/screen.png";
 
 const tours = [
   {
