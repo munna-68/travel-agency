@@ -1,6 +1,7 @@
 import styles from "./AboutPage.module.css";
 import heroImage from "../assets/about/screen.png";
 import CropImage from "../components/CropImage";
+import NavLink from "../components/NavLink";
 
 const curators = [
   { name: "Marcus Thorne", role: "Founder & CEO", position: "18% 58%" },
@@ -110,9 +111,9 @@ export default function AboutPage() {
           />
           <div className={styles.ctaOverlay}>
             <h2>START YOUR STORY</h2>
-            <a href="/tours" className={styles.button}>
+            <NavLink to="/tours" className={styles.button}>
               EXPLORE TOURS →
-            </a>
+            </NavLink>
           </div>
         </div>
       </section>

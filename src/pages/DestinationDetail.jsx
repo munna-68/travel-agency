@@ -135,9 +135,9 @@ export default function DestinationDetail() {
           <h2 className={styles.ctaTitle}>{data.title}</h2>
           <p className={styles.ctaBody}>{t("detail.philosophyBody")}</p>
           <div className={styles.ctaActions}>
-            <a className={styles.primaryCta} href="/tours">
+            <NavLink className={styles.primaryCta} to="/tours">
               {t("detail.viewExpedition")}
-            </a>
+            </NavLink>
             <NavLink to="/destinations" className={styles.backCta}>
               {t("detail.backToList", { section: t("nav.destinations") })}
             </NavLink>

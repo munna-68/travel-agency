@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import NavLink from "./NavLink";
 import styles from "./Footer.module.css";
 
 const linkKeys = [
@@ -19,9 +20,9 @@ export default function Footer() {
 
         <nav className={styles.links} aria-label="Footer">
           {linkKeys.map((key) => (
-            <a key={key} href="/">
+            <NavLink key={key} to="/">
               {t(key)}
-            </a>
+            </NavLink>
           ))}
         </nav>
       </div>

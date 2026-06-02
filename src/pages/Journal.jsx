@@ -30,13 +30,13 @@ export default function Journal() {
             <div className={styles.sectionLabel}>{t("journal.entriesLabel")}</div>
             <nav className={styles.tabs} aria-label={t("journal.tabsAria")}>
               {(Array.isArray(tabs) ? tabs : []).map((tab, index) => (
-                <a
+                <NavLink
                   key={tab}
-                  href="/journal"
+                  to="/journal"
                   className={index === 0 ? styles.activeTab : undefined}
                 >
                   {tab}
-                </a>
+                </NavLink>
               ))}
             </nav>
           </div>
@@ -99,9 +99,9 @@ export default function Journal() {
           </div>
 
           <div className={styles.moreLinkWrap}>
-            <a className={styles.moreLink} href="/journal">
+            <NavLink className={styles.moreLink} to="/journal">
               {t("journal.moreLink")}
-            </a>
+            </NavLink>
           </div>
         </div>
       </section>

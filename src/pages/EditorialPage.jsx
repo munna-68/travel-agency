@@ -1,6 +1,7 @@
 import styles from "./EditorialPage.module.css";
 import heroImage from "../assets/editorial/screen.png";
 import CropImage from "../components/CropImage";
+import NavLink from "../components/NavLink";
 
 export default function EditorialPage() {
   return (
@@ -26,13 +27,13 @@ export default function EditorialPage() {
         <nav>
           {["ALL STORIES", "HIDDEN GEMS", "LOCAL GUIDES", "TRAVEL TIPS"].map(
             (item, index) => (
-              <a
+              <NavLink
                 key={item}
-                href="/"
+                to="/"
                 className={index === 0 ? styles.active : ""}
               >
                 {item}
-              </a>
+              </NavLink>
             ),
           )}
         </nav>

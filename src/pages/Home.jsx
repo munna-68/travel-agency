@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import NavLink from "../components/NavLink";
 import styles from "./Home.module.css";
 
 export default function Home() {
@@ -39,7 +40,7 @@ export default function Home() {
               alt=""
             />
             <div className={styles.heroCTA}>
-              <a href="/destinations">{t("home.heroCta")}</a>
+              <NavLink to="/destinations">{t("home.heroCta")}</NavLink>
             </div>
           </div>
         </div>
@@ -65,10 +66,10 @@ export default function Home() {
       <section className={styles.highlightsSection}>
         <div className={styles.highlightGrid}>
           {highlights.map((highlight) => (
-            <a
+            <NavLink
               className={styles.highlightCard}
               key={highlight.label}
-              href={highlight.href}
+              to={highlight.href}
             >
               <img
                 className={styles.highlightImage}
@@ -83,7 +84,7 @@ export default function Home() {
                   {t("home.highlights.enter")}
                 </span>
               </div>
-            </a>
+            </NavLink>
           ))}
         </div>
       </section>
@@ -95,9 +96,9 @@ export default function Home() {
             <h2>{t("home.band.title")}</h2>
           </div>
 
-          <a className={styles.bandAction} href="/journal">
+          <NavLink className={styles.bandAction} to="/journal">
             {t("home.band.action")}
-          </a>
+          </NavLink>
         </div>
       </section>
     </main>

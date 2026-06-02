@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import NavLink from "../components/NavLink";
 import styles from "./About.module.css";
 
 const curators = [
@@ -120,9 +121,9 @@ export default function About() {
           />
           <div className={styles.storyOverlay}>
             <h2 className={styles.storyTitle}>{t("about.storyTitle")}</h2>
-            <a className={styles.storyButton} href="/tours">
+            <NavLink className={styles.storyButton} to="/tours">
               {t("about.storyAction")}
-            </a>
+            </NavLink>
           </div>
         </div>
       </section>

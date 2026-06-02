@@ -1,6 +1,7 @@
 import styles from "./ToursPage.module.css";
 import heroImage from "../assets/tours/screen.png";
 import CropImage from "../components/CropImage";
+import NavLink from "../components/NavLink";
 
 const tours = [
   {
@@ -104,7 +105,7 @@ export default function ToursPage() {
                   <dd>{tour.price}</dd>
                 </div>
               </dl>
-              <a href="/journal">EXPLORE TOUR →</a>
+              <NavLink to="/journal">EXPLORE TOUR →</NavLink>
             </div>
           </article>
         ))}
@@ -132,7 +133,7 @@ export default function ToursPage() {
                   <dd>{tours[3].price}</dd>
                 </div>
               </dl>
-              <a href="/journal">EXPLORE TOUR →</a>
+              <NavLink to="/journal">EXPLORE TOUR →</NavLink>
             </div>
           </article>
 
@@ -156,7 +157,7 @@ export default function ToursPage() {
                   <dd>{tours[4].price}</dd>
                 </div>
               </dl>
-              <a href="/journal">EXPLORE TOUR →</a>
+              <NavLink to="/journal">EXPLORE TOUR →</NavLink>
             </div>
           </article>
 
@@ -168,14 +169,14 @@ export default function ToursPage() {
               can design a completely bespoke itinerary tailored to your
               specific interests and pace.
             </p>
-            <a href="/about">START CUSTOM INQUIRY →</a>
+            <NavLink to="/about">START CUSTOM INQUIRY →</NavLink>
           </article>
         </div>
       </section>
 
       <section className={styles.ctaBand}>
         <h2>READY FOR ADVENTURE?</h2>
-        <a href="/destinations">REQUEST GROUP QUOTE →</a>
+        <NavLink to="/destinations">REQUEST GROUP QUOTE →</NavLink>
       </section>
     </div>
   );

@@ -12,6 +12,8 @@ import styles from "./PageTransition.module.css";
 
 const PageTransitionContext = createContext(null);
 
+let preloaderHasPlayed = false;
+
 const premiumEase = [0.85, 0, 0.15, 1];
 
 export function useTransition() {
@@ -26,7 +28,7 @@ export default function PageTransitionProvider({ children }) {
   const location = useLocation();
   const navigate = useNavigate();
 
-  const [isPreloading, setIsPreloading] = useState(true);
+  const [isPreloading, setIsPreloading] = useState(() => !preloaderHasPlayed);
   const [preloaderState, setPreloaderState] = useState("scrambling");
 
   const [isTransitioning, setIsTransitioning] = useState(false);
@@ -143,6 +145,7 @@ export default function PageTransitionProvider({ children }) {
               }}
               onAnimationComplete={() => {
                 if (preloaderState === "splitOpen") {
+                  preloaderHasPlayed = true;
                   setIsPreloading(false);
                 }
               }}

@@ -1,6 +1,7 @@
 import styles from "./JournalPage.module.css";
 import heroImage from "../assets/journal/screen.png";
 import CropImage from "../components/CropImage";
+import NavLink from "../components/NavLink";
 
 export default function JournalPage() {
   return (
@@ -26,13 +27,13 @@ export default function JournalPage() {
         <nav>
           {["ALL STORIES", "HIDDEN GEMS", "LOCAL GUIDES", "TRAVEL TIPS"].map(
             (item, index) => (
-              <a
+              <NavLink
                 key={item}
-                href="/"
+                to="/"
                 className={index === 0 ? styles.active : ""}
               >
                 {item}
-              </a>
+              </NavLink>
             ),
           )}
         </nav>
@@ -107,7 +108,7 @@ export default function JournalPage() {
       </section>
 
       <section className={styles.discover}>
-        <a href="/">DISCOVER MORE STORIES →</a>
+        <NavLink to="/">DISCOVER MORE STORIES →</NavLink>
       </section>
 
       <section className={styles.newsletter}>
