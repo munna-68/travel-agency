@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
+import NavLink from "./NavLink";
 import styles from "./Navbar.module.css";
 
 const links = [

@@ -1,0 +1,105 @@
+.scrambleText {
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 0.4em;
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  user-select: none;
+  color: #1c1b1b;
+}
+
+@media (min-width: 640px) {
+  .scrambleText {
+    font-size: 1rem;
+  }
+}
+
+.noGapFix {
+  backface-visibility: hidden;
+  transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+}
+
+.pinkPanel {
+  background-color: #fbe3e2;
+}
+
+.bluePanel {
+  background-color: #d1e3f0;
+}
+
+.preloaderContainer {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.preloaderTopPanel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50vh;
+  z-index: 10;
+  border-bottom: 1px solid #fbe3e2;
+}
+
+.preloaderBottomPanel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 0;
+  border-top: 1px solid #d1e3f0;
+}
+
+.scrambleContainer {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 20;
+  pointer-events: none;
+}
+
+.scrambleInner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.transitionContainer {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.transitionTopPanel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50vh;
+  pointer-events: auto;
+  border-bottom: 1px solid #fbe3e2;
+}
+
+.transitionBottomPanel {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50vh;
+  pointer-events: auto;
+  border-top: 1px solid #d1e3f0;
+}
