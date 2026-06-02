@@ -6,22 +6,22 @@ const curators = [
   {
     roleKey: "about.curatorRoles.founder",
     name: "MARCUS THORNE",
-    image: "/img/curator-marcus.svg",
+    image: "/img/curator-marcus.jpg",
   },
   {
     roleKey: "about.curatorRoles.content",
     name: "ELENA ROSSI",
-    image: "/img/curator-elena.svg",
+    image: "/img/curator-elena.jpg",
   },
   {
     roleKey: "about.curatorRoles.expedition",
     name: "SIDDHARTH MEHTA",
-    image: "/img/curator-siddharth.svg",
+    image: "/img/curator-siddharth.jpg",
   },
   {
     roleKey: "about.curatorRoles.ops",
     name: "CHLOE CHEN",
-    image: "/img/curator-chloe.svg",
+    image: "/img/curator-chloe.jpg",
   },
 ];
 
@@ -50,7 +50,7 @@ export default function About() {
         <div className={styles.philosophyInner}>
           <img
             className={styles.philosophyImage}
-            src="/img/about-philosophy.svg"
+            src="/img/about-philosophy.jpg"
             alt=""
           />
 
@@ -116,7 +116,7 @@ export default function About() {
         <div className={styles.storyCard}>
           <img
             className={styles.storyImage}
-            src="/img/about-story.svg"
+            src="/img/about-story.jpg"
             alt=""
           />
           <div className={styles.storyOverlay}>

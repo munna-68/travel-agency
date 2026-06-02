@@ -14,7 +14,7 @@ export default function Journal() {
       <section className={styles.hero}>
         <img
           className={styles.heroImage}
-          src="/img/journal-hero-valley.svg"
+          src="/img/journal-hero-valley.jpg"
           alt=""
         />
         <div className={styles.heroCopy}>

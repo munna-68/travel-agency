@@ -6,7 +6,7 @@ export const tours = [
     title: "THE ZEN PATHWAY",
     duration: "4 DAYS",
     price: "$1,250",
-    image: "/img/tours-zen-pathway.svg",
+    image: "/img/tours-zen-pathway.jpg",
     intro:
       "A four-day immersion in the contemplative architecture of Kyoto — gardens, tea, and the slow ritual of a city that has been refining stillness for a thousand years.",
     bestTime: "MAR — MAY, OCT — NOV",
@@ -48,7 +48,7 @@ export const tours = [
     title: "KARST FRONTIER",
     duration: "6 DAYS",
     price: "$2,100",
-    image: "/img/tours-karst-frontier.svg",
+    image: "/img/tours-karst-frontier.jpg",
     intro:
       "A six-day traverse of the karst country, with jeep access to villages and viewpoints that don't appear on the standard route.",
     bestTime: "APR — JUN, SEP — OCT",
@@ -100,7 +100,7 @@ export const tours = [
     title: "SUMMIT SERENITY",
     duration: "5 DAYS",
     price: "$1,850",
-    image: "/img/tours-summit-serenity.svg",
+    image: "/img/tours-summit-serenity.jpg",
     intro:
       "Five days of high-alpine walking in the Canadian Rockies, with long ridge days, glacial lakes, and quiet evenings at remote lodges.",
     bestTime: "JUL — SEP",
@@ -147,7 +147,7 @@ export const tours = [
     title: "AEGEAN FLAVORS",
     duration: "3 DAYS",
     price: "$980",
-    image: "/img/tours-aegean-flavors.svg",
+    image: "/img/tours-aegean-flavors.jpg",
     intro:
       "A short, sensory three days tracing the flavours of the caldera — vineyards, fish tavernas, and a long lunch in a private cave house.",
     bestTime: "MAY — OCT",
@@ -184,7 +184,7 @@ export const tours = [
     title: "COASTAL HIGHWAY",
     duration: "7 DAYS",
     price: "$2,400",
-    image: "/img/tours-coastal-highway.svg",
+    image: "/img/tours-coastal-highway.jpg",
     intro:
       "Seven slow days down the Pacific Coast Highway, with detours into Big Sur, side canyons, and the kind of roadhouse dinners that only happen off the main road.",
     bestTime: "APR — JUN, SEP — OCT",

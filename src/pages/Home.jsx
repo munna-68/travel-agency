@@ -11,21 +11,21 @@ export default function Home() {
       title: t("home.highlights.destinationsTitle"),
       copy: t("home.highlights.destinationsCopy"),
       href: "/destinations",
-      image: "/img/kyoto-autumn-path.svg",
+      image: "/img/kyoto-autumn-path.jpg",
     },
     {
       label: t("home.highlights.toursLabel"),
       title: t("home.highlights.toursTitle"),
       copy: t("home.highlights.toursCopy"),
       href: "/tours",
-      image: "/img/about-story.svg",
+      image: "/img/about-story.jpg",
     },
     {
       label: t("home.highlights.journalLabel"),
       title: t("home.highlights.journalTitle"),
       copy: t("home.highlights.journalCopy"),
       href: "/journal",
-      image: "/img/journal-hero-valley.svg",
+      image: "/img/journal-hero-valley.jpg",
     },
   ];
 
