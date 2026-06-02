@@ -34,9 +34,7 @@ export default function Navbar({ theme = "light" }) {
           className={styles.brand}
           aria-label={t("nav.brandHome")}
         >
-          LOCAL
-          <br />
-          EXPLORER
+          EXPLORER.
         </NavLink>
 
         <nav className={styles.nav} aria-label={t("common.languageLabel")}>
