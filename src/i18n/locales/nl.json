@@ -1,7 +1,9 @@
 {
   "common": {
     "languageLabel": "Taal",
+    "navigationMenu": "Hoofdnavigatie",
     "openMenu": "Menu openen",
+    "closeMenu": "Menu sluiten",
     "explore": "Verken",
     "loading": "Laden"
   },

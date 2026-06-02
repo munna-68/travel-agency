@@ -1,7 +1,9 @@
 {
   "common": {
     "languageLabel": "Langue",
+    "navigationMenu": "Navigation principale",
     "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu",
     "explore": "Explorer",
     "loading": "Chargement"
   },

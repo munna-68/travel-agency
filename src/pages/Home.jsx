@@ -1,9 +1,19 @@
+import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import NavLink from "../components/NavLink";
 import styles from "./Home.module.css";
 
+const MOBILE_VIDEO = "/img/video/Mobile(1).mp4";
+const DESKTOP_VIDEO = "/img/video/Desktop(1).mp4";
+
 export default function Home() {
   const { t } = useTranslation();
+  const [videoSrc, setVideoSrc] = useState(DESKTOP_VIDEO);
+
+  useEffect(() => {
+    const isMobile = window.matchMedia("(max-width: 700px)").matches;
+    setVideoSrc(isMobile ? MOBILE_VIDEO : DESKTOP_VIDEO);
+  }, []);
 
   const highlights = [
     {
@@ -33,10 +43,14 @@ export default function Home() {
     <main className={styles.page}>
       <section className={styles.hero} aria-label={t("home.heroAria")}>
         <div className={styles.heroVisual}>
-          <img
-            className={styles.heroImage}
-            src="/img/hero-landing.svg"
-            alt=""
+          <video
+            className={styles.heroVideo}
+            autoPlay
+            loop
+            muted
+            playsInline
+            poster="/img/hero-landing.svg"
+            src={videoSrc}
           />
         </div>
         <div className={styles.heroInner}>
@@ -48,10 +62,15 @@ export default function Home() {
               <NavLink className={styles.primaryAction} to="/destinations">
                 {t("home.heroPrimaryAction")}
               </NavLink>
-              <button className={styles.secondaryAction}>
+              <a
+                className={styles.secondaryAction}
+                href="https://youtu.be/dQw4w9WgXcQ?si=G73wFuCpKxPANj9O"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <span className={styles.playIcon}>▶</span>{" "}
                 {t("home.heroSecondaryAction").replace("▶ ", "")}
-              </button>
+              </a>
             </div>
           </div>
         </div>
