@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Outlet, useLocation, matchPath } from "react-router-dom";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
@@ -23,6 +24,10 @@ export default function Layout() {
   const isDetail = detailPaths.some(({ pattern }) =>
     matchPath({ path: pattern, end: true }, location.pathname),
   );
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+  }, [location.pathname]);
 
   return (
     <div
