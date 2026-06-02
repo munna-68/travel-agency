@@ -21,6 +21,12 @@
     "press": "Press Kit"
   },
   "home": {
+    "heroKicker": "CURATED ROUTES. LOCAL STORIES.",
+    "heroTitle": "Experience places like a local",
+    "heroCopy": "Handpicked routes, trusted local partnerships, and stories that bring every place to life.",
+    "heroPrimaryAction": "Explore routes →",
+    "heroSecondaryAction": "▶ Watch the journey",
+    "heroScroll": "SCROLL TO DISCOVER",
     "heroAria": "Local Explorer landing hero",
     "heroCta": "Explore our routes →",
     "highlightsAria": "Agency highlights",
@@ -126,12 +132,7 @@
     "heroCopy": "Immersive stories from the edge of the world, curated for those who seek the authentic, the hidden, and the sublime.",
     "entriesLabel": "LATEST ENTRIES",
     "tabsAria": "Journal categories",
-    "tabs": [
-      "ALL STORIES",
-      "HIDDEN GEMS",
-      "LOCAL GUIDES",
-      "TRAVEL TIPS"
-    ],
+    "tabs": ["ALL STORIES", "HIDDEN GEMS", "LOCAL GUIDES", "TRAVEL TIPS"],
     "moreLink": "DISCOVER MORE STORIES →",
     "subscribeTitle": "JOIN OUR WEEKLY DISPATCH",
     "subscribeCopy": "No spam, just curated travel inspiration, hidden location drops, and editorial tales delivered straight to your inbox every Sunday morning.",

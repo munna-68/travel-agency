@@ -32,21 +32,40 @@ export default function Home() {
   return (
     <main className={styles.page}>
       <section className={styles.hero} aria-label={t("home.heroAria")}>
+        <div className={styles.heroVisual}>
+          <img
+            className={styles.heroImage}
+            src="/img/hero-landing.svg"
+            alt=""
+          />
+        </div>
         <div className={styles.heroInner}>
-          <div className={styles.heroVisual}>
-            <img
-              className={styles.heroImage}
-              src="/img/hero-landing.svg"
-              alt=""
-            />
-            <div className={styles.heroCTA}>
-              <NavLink to="/destinations">{t("home.heroCta")}</NavLink>
+          <div className={styles.heroCopy}>
+            <div className={styles.kicker}>{t("home.heroKicker")}</div>
+            <h1>{t("home.heroTitle")}</h1>
+            <p>{t("home.heroCopy")}</p>
+            <div className={styles.actions}>
+              <NavLink className={styles.primaryAction} to="/destinations">
+                {t("home.heroPrimaryAction")}
+              </NavLink>
+              <button className={styles.secondaryAction}>
+                <span className={styles.playIcon}>▶</span>{" "}
+                {t("home.heroSecondaryAction").replace("▶ ", "")}
+              </button>
             </div>
           </div>
         </div>
+        <div className={styles.scrollIndicator}>
+          <span className={styles.scrollText}>{t("home.heroScroll")}</span>
+          <div className={styles.scrollCircle}>↓</div>
+          <div className={styles.scrollLine}></div>
+        </div>
       </section>
 
-      <section className={styles.statsSection} aria-label={t("home.highlightsAria")}>
+      <section
+        className={styles.statsSection}
+        aria-label={t("home.highlightsAria")}
+      >
         <div className={styles.statsGrid}>
           <div className={styles.statItem}>
             <strong>70+</strong>

@@ -4,7 +4,7 @@
 
 .hero {
   position: relative;
-  min-height: 560px;
+  min-height: 85vh;
   overflow: hidden;
   padding: 0;
   background: var(--surface);
@@ -37,7 +37,7 @@
 .heroInner {
   position: relative;
   z-index: 2;
-  min-height: 560px;
+  min-height: 85vh;
   display: flex;
   align-items: center;
 }
@@ -62,20 +62,27 @@
 
 .kicker {
   display: inline-block;
-  padding: 6px 12px;
-  background: rgba(255, 255, 255, 0.06);
-  color: rgba(255, 255, 255, 0.95);
-  border-radius: var(--radius-sm);
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 24px;
 }
 
 .heroCopy h1 {
   margin: 12px 0 0;
-  font-family: var(--headline-lg-font-family);
-  font-size: clamp(48px, 13vw, 140px);
-  line-height: 0.9;
+  font-family: var(--display-hero-font-family);
+  font-size: var(--display-hero-font-size);
+  line-height: var(--display-hero-line-height);
   font-weight: 400;
-  text-transform: none;
+  text-transform: uppercase;
   color: #fff;
+  letter-spacing: -0.02em;
+  max-width: 600px;
+}
+
+@media (max-width: 700px) {
+  .heroCopy h1 {
+    font-size: var(--display-hero-mobile-font-size);
+    line-height: var(--display-hero-mobile-line-height);
+  }
 }
 
 .heroCopy h1 span {
@@ -126,23 +133,80 @@
   background: var(--primary);
   color: var(--on-primary);
   border-top-right-radius: 22px;
-  transition: background-color 220ms ease, transform 220ms ease;
+  transition:
+    background-color 220ms ease,
+    transform 220ms ease;
 }
 
 .primaryAction:hover {
   background: var(--inverse-surface);
 }
 
+.playIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #fff;
+  color: #000;
+  font-size: 10px;
+  margin-right: 8px;
+  padding-left: 2px; /* optical alignment for play triangle */
+}
+
+.scrollIndicator {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  z-index: 3;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.scrollText {
+  font-family: var(--label-caps-font-family);
+  font-size: var(--label-caps-font-size);
+  letter-spacing: var(--label-caps-letter-spacing);
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.scrollCircle {
+  width: 32px;
+  height: 32px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.scrollLine {
+  width: 1px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.4);
+}
+
 .secondaryAction {
-  border: 1px solid var(--outline-variant);
-  background: var(--surface-container-lowest);
-  color: var(--on-surface);
-  transition: background-color 220ms ease, border-color 220ms ease;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: transparent;
+  color: #fff;
+  transition:
+    background-color 220ms ease,
+    border-color 220ms ease;
+  cursor: pointer;
 }
 
 .secondaryAction:hover {
-  background: var(--surface-container-high);
-  border-color: var(--on-surface);
+  background: rgba(255, 255, 255, 0.1);
+  border-color: #fff;
 }
 
 .heroVisual {
@@ -157,79 +221,6 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-.heroCaption {
-  position: absolute;
-  left: 20px;
-  bottom: 20px;
-  display: flex;
-  gap: 16px;
-  color: rgba(255, 255, 255, 0.9);
-  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.45);
-}
-
-.heroTabs {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 18px;
-  z-index: 3;
-  display: flex;
-  justify-content: center;
-  gap: 18px;
-  pointer-events: auto;
-}
-
-.heroTab {
-  background: rgba(255, 255, 255, 0.06);
-  color: rgba(255, 255, 255, 0.95);
-  border: 0;
-  padding: 10px 20px;
-  border-radius: 999px;
-  font-family: var(--label-caps-font-family);
-  font-size: 14px;
-  letter-spacing: var(--label-caps-letter-spacing);
-  text-transform: none;
-  cursor: pointer;
-  transition: background-color 220ms ease, color 220ms ease;
-}
-
-.heroTabActive {
-  background: var(--primary);
-  color: var(--on-primary);
-  box-shadow: 0 10px 30px rgba(7, 10, 14, 0.28);
-}
-
-.heroTab:focus,
-.heroTab:hover {
-  background: rgba(255, 255, 255, 0.14);
-  color: var(--on-surface);
-}
-.heroCTA {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 40px;
-  z-index: 3;
-}
-
-.heroCTA a {
-  display: inline-block;
-  background: rgba(0, 0, 0, 0.7);
-  color: #fff;
-  padding: 12px 24px;
-  border-radius: 999px;
-  font-family: var(--label-caps-font-family);
-  font-size: 14px;
-  letter-spacing: var(--label-caps-letter-spacing);
-  text-decoration: none;
-  transition: background-color 220ms ease, transform 220ms ease;
-}
-
-.heroCTA a:hover {
-  background: var(--primary);
-  transform: translateY(-1px);
 }
 
 .statsSection {
@@ -279,7 +270,9 @@
   min-height: 420px;
   background: var(--surface-container-highest);
   cursor: pointer;
-  transition: transform 280ms ease, box-shadow 280ms ease;
+  transition:
+    transform 280ms ease,
+    box-shadow 280ms ease;
 }
 
 .highlightCard:hover {
@@ -336,7 +329,10 @@
   margin-top: 4px;
   background: var(--surface-container-lowest);
   color: var(--on-surface);
-  transition: background-color 220ms ease, color 220ms ease, transform 220ms ease;
+  transition:
+    background-color 220ms ease,
+    color 220ms ease,
+    transform 220ms ease;
 }
 
 .highlightLink:hover {
@@ -378,7 +374,9 @@
   color: var(--on-primary);
   border-top-right-radius: 22px;
   white-space: nowrap;
-  transition: background-color 220ms ease, transform 220ms ease;
+  transition:
+    background-color 220ms ease,
+    transform 220ms ease;
 }
 
 .bandAction:hover {
@@ -391,6 +389,10 @@
   .heroInner,
   .highlightGrid {
     grid-template-columns: 1fr;
+  }
+
+  .heroCopy {
+    width: 100%;
   }
 
   .bandInner {
@@ -419,10 +421,6 @@
   .bandInner {
     padding-left: var(--margin-mobile);
     padding-right: var(--margin-mobile);
-  }
-
-  .heroCopy h1 {
-    font-size: 58px;
   }
 
   .band h2 {
