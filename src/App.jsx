@@ -5,7 +5,6 @@ import About from "./pages/About";
 import Destinations from "./pages/Destinations";
 import Tours from "./pages/Tours";
 import Journal from "./pages/Journal";
-import Editorial from "./pages/Editorial";
 
 export default function App() {
   return (
@@ -16,7 +15,6 @@ export default function App() {
         <Route path="destinations" element={<Destinations />} />
         <Route path="tours" element={<Tours />} />
         <Route path="journal" element={<Journal />} />
-        <Route path="editorial" element={<Editorial />} />
       </Route>
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>

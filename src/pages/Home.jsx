@@ -90,7 +90,7 @@ export default function Home() {
             <h2>Travel that feels edited, not assembled.</h2>
           </div>
 
-          <a className={styles.bandAction} href="/editorial">
+          <a className={styles.bandAction} href="/journal">
             READ THE JOURNAL →
           </a>
         </div>

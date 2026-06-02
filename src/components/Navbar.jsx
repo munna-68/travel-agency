@@ -7,7 +7,6 @@ const links = [
   { to: "/destinations", label: "Destinations" },
   { to: "/tours", label: "Tours" },
   { to: "/journal", label: "Journal" },
-  { to: "/editorial", label: "Editorial" },
 ];
 
 export default function Navbar() {

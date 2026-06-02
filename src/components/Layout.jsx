@@ -9,7 +9,6 @@ const pageModes = {
   "/destinations": { theme: "light", footer: "light" },
   "/tours": { theme: "light", footer: "light" },
   "/journal": { theme: "light", footer: "dark" },
-  "/editorial": { theme: "dark", footer: "light" },
 };
 
 export default function Layout() {

@@ -91,7 +91,7 @@ export default function Journal() {
           </div>
 
           <div className={styles.moreLinkWrap}>
-            <a className={styles.moreLink} href="/editorial">
+            <a className={styles.moreLink} href="/journal">
               DISCOVER MORE STORIES →
             </a>
           </div>
