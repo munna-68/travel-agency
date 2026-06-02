@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import styles from "./Navbar.module.css";
 
@@ -9,9 +10,21 @@ const links = [
   { to: "/journal", label: "Journal" },
 ];
 
-export default function Navbar() {
+export default function Navbar({ theme = "light" }) {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 8);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   return (
-    <header className={styles.header}>
+    <header
+      className={`${styles.header} ${scrolled ? styles.scrolled : ""}`}
+      data-theme={theme}
+    >
       <div className={styles.inner}>
         <NavLink
           to="/"
