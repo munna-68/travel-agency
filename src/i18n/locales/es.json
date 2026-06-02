@@ -1,0 +1,180 @@
+{
+  "common": {
+    "languageLabel": "Idioma",
+    "openMenu": "Abrir menú",
+    "explore": "Explorar",
+    "loading": "Cargando"
+  },
+  "nav": {
+    "home": "Inicio",
+    "about": "Nosotros",
+    "destinations": "Destinos",
+    "tours": "Viajes",
+    "journal": "Diario",
+    "brandHome": "Inicio Local Explorer"
+  },
+  "footer": {
+    "brand": "LOCAL EXPLORER",
+    "privacy": "Política de privacidad",
+    "terms": "Términos del servicio",
+    "contact": "Contacto",
+    "press": "Kit de prensa"
+  },
+  "home": {
+    "heroAria": "Página de inicio Local Explorer",
+    "heroCta": "Explorar nuestras rutas →",
+    "highlightsAria": "Destacados de la agencia",
+    "stats": {
+      "routesLabel": "RUTAS CURADAS",
+      "partnersLabel": "ALIANZAS LOCALES",
+      "toneLabel": "TONO EDITORIAL"
+    },
+    "highlights": {
+      "destinationsLabel": "DESTINOS",
+      "destinationsTitle": "Elige el ritmo que va contigo.",
+      "destinationsCopy": "Escapadas de montaña, viajes lentos por la costa e itinerarios urbanos creados por quienes viven allí.",
+      "toursLabel": "VIAJES",
+      "toursTitle": "Experiencias guiadas con contención editorial.",
+      "toursCopy": "Pequeños grupos, diseñados en torno a la textura, el tiempo y el acceso — no a listas genéricas.",
+      "journalLabel": "DIARIO",
+      "journalTitle": "Historias de los lugares que dan forma a la marca.",
+      "journalCopy": "Notas, crónicas de campo y observaciones discretas de las personas y paisajes detrás de las rutas.",
+      "enter": "ENTRAR →"
+    },
+    "band": {
+      "kicker": "EMPIEZA AQUÍ",
+      "title": "Viajar que se lee, que se escribe — nunca ensamblado a prisa.",
+      "action": "LEER EL DIARIO →"
+    }
+  },
+  "about": {
+    "heroTitle": ["MÁS ALLÁ", "DEL MAPA"],
+    "heroCopy": "Desde 2014 diseñamos viajes que trascienden el turismo tradicional. Las mejores historias no se encuentran en las guías, sino en los rincones silenciosos del mundo, compartidos por quienes lo habitan.",
+    "philosophyTitle": "NUESTRA FILOSOFÍA",
+    "philosophyBody1": "No vendemos viajes, tejemos conexiones. Local Explorer nació de una idea sencilla: viajar debe ser un intercambio recíproco de cultura, respeto y asombro.",
+    "philosophyBody2": "Cada destino de nuestro catálogo es validado en persona por el equipo. Pasamos semanas sobre el terreno, eligiendo socios, probando cocinas y encontrando senderos que no aparecen en ningún mapa digital.",
+    "values": [
+      "100% GUÍAS LOCALES",
+      "HUELLA CARBONO NEUTRA",
+      "PROYECTOS DE PRESERVACIÓN CULTURAL"
+    ],
+    "statsAria": "Estadísticas Local Explorer",
+    "stats": {
+      "years": "AÑOS EXPLORANDO",
+      "countries": "PAÍSES",
+      "memories": "RECUERDOS CREADOS",
+      "impact": "IMPACTO LOCAL"
+    },
+    "curatorsTitle": "LOS CURADORES",
+    "curatorsIntro": "Una colectiva de fotógrafos, escritores y exploradores unidos por una sola obsesión: el descubrimiento.",
+    "curatorRoles": {
+      "founder": "FUNDADOR & CEO",
+      "content": "DIRECTORA DE CONTENIDO",
+      "expedition": "JEFE DE EXPEDICIONES",
+      "ops": "DIRECTORA DE OPERACIONES"
+    },
+    "storyTitle": "COMIENZA TU HISTORIA",
+    "storyAction": "EXPLORAR VIAJES →"
+  },
+  "destinations": {
+    "heroTitle": "¿ADÓNDE A CONTINUACIÓN?",
+    "heroCopy": "Escapa de lo cotidiano con nuestra selección de retiros alrededor del mundo. Desde las cumbres brumosas de Guilin hasta los serenos templos de Kioto, redescubre el arte de vagar.",
+    "statsAria": "Estadísticas de destinos",
+    "stats": {
+      "tours": "VIAJES CURADOS",
+      "hubs": "CENTROS GLOBALES",
+      "support": "APOYO LOCAL"
+    },
+    "viewExpedition": "VER EXPEDICIÓN →",
+    "revealKicker": "REVELACIÓN EXCLUSIVA",
+    "revealCopy": "Vive la caldera sin las multitudes. Nuestro nuevo diario nocturno explora la vida secreta de las Cícladas bajo la luz de la luna.",
+    "revealDate": "DISPONIBLE EN OTOÑO '24",
+    "newsletterTitle": "EL DIARIO SEMANAL",
+    "newsletterCopy": "Únete a más de 50 000 exploradores y recibe historias de viaje seleccionadas, guías de destinos ocultos y acceso anticipado a nuevos viajes.",
+    "emailPlaceholder": "TU CORREO ELECTRÓNICO",
+    "emailAria": "Correo electrónico",
+    "subscribe": "SUSCRIBIRSE",
+    "quote": "«VIAJAR ES LO ÚNICO QUE COMPRAS Y TE HACE MÁS RICO».",
+    "quoteFooter": "— EXPLORADOR ANÓNIMO"
+  },
+  "tours": {
+    "kicker": "TEMPORADA 2024",
+    "heroTitle": ["NUESTROS VIAJES", "CURADOS"],
+    "heroCopy": "Más allá de las rutas estándar. Hemos diseñado cada viaje para sumergirte en el alma auténtica de cada destino, guiado por quienes lo llaman hogar.",
+    "statLabel": "VIAJES ACTIVOS",
+    "filtersAria": "Filtros de viajes",
+    "filters": [
+      "TODAS LAS EXPERIENCIAS",
+      "SENDERISMO",
+      "CULTURAL",
+      "JEEP",
+      "GASTRONOMÍA"
+    ],
+    "duration": "DURACIÓN",
+    "price": "PRECIO",
+    "exploreTour": "EXPLORAR VIAJE →",
+    "customTitle": "DISEÑA TU PROPIO VIAJE",
+    "customCopy": "¿No encuentras exactamente lo que buscas? Nuestros arquitectos de viaje pueden diseñar un itinerario a medida, adaptado a tus intereses y ritmo.",
+    "customLink": "SOLICITUD PERSONALIZADA →",
+    "ctaTitle": "¿LISTO PARA LA AVENTURA?",
+    "ctaButton": "PEDIR COTIZACIÓN DE GRUPO →"
+  },
+  "journal": {
+    "kicker": "VOLUMEN 04 / SERIE EDITORIAL",
+    "title": "CRÓNICAS DE VIAJE",
+    "heroCopy": "Historias inmersivas desde el borde del mundo, seleccionadas para quienes buscan lo auténtico, lo oculto y lo sublime.",
+    "entriesLabel": "ÚLTIMAS PUBLICACIONES",
+    "tabsAria": "Categorías del diario",
+    "tabs": [
+      "TODAS LAS HISTORÍAS",
+      "TESOROS OCULTOS",
+      "GUÍAS LOCALES",
+      "CONSEJOS DE VIAJE"
+    ],
+    "moreLink": "DESCUBRIR MÁS HISTORIAS →",
+    "subscribeTitle": "ÚNETE A NUESTRO ENVÍO SEMANAL",
+    "subscribeCopy": "Sin spam, solo inspiración de viaje, lugares secretos y crónicas editoriales, directamente en tu correo cada domingo por la mañana.",
+    "emailLabel": "CORREO ELECTRÓNICO",
+    "emailAria": "Correo electrónico",
+    "subscribeButton": "SUSCRIBIRSE",
+    "checkbox": "ACEPTO LA POLÍTICA DE PRIVACIDAD Y LOS TÉRMINOS DEL SERVICIO.",
+    "quote": "«VIAJAR ES LO ÚNICO QUE COMPRAS Y TE HACE MÁS RICO».",
+    "quoteFooter": "LA FILOSOFÍA LOCAL EXPLORER",
+    "watermark": "LOCAL"
+  },
+  "detail": {
+    "back": "← VOLVER",
+    "exploreTourCta": "RESERVAR ESTE VIAJE",
+    "readMoreCta": "LEER LA HISTORIA COMPLETA",
+    "viewExpedition": "VER EXPEDICIÓN",
+    "highlights": "DESTACADOS",
+    "bestTime": "MEJOR ÉPOCA",
+    "duration": "DURACIÓN",
+    "groupSize": "TAMAÑO DEL GRUPO",
+    "startingFrom": "DESDE",
+    "difficulty": "DIFICULTAD",
+    "stay": "DÓNDE TE HOSPEDARÁS",
+    "stayPlaceholder": "Alojamientos boutique seleccionados, en sintonía con el espíritu editorial del viaje.",
+    "itinerary": "ITINERARIO",
+    "stayBody": "Cada alojamiento de nuestra red se elige por su carácter sereno y su cercanía con las experiencias que dan forma a la ruta. Espera lodges locales, casas de patrimonio restauradas y hoteles de diseño donde la habitación es un lugar para descansar, no para esconderse.",
+    "philosophy": "LA MIRADA EDITORIAL",
+    "philosophyBody": "Diseñamos esta ruta para viajeros que miden un viaje por las personas encontradas y el silencio ganado — no por la lista marcada. El ritmo es deliberado, el acceso es curado, y los momentos quedan para quienes viajan para sentir algo.",
+    "guide": "TU GUÍA LOCAL",
+    "guideBody": "Un experto regional acompaña cada salida. No es un coordinador de tours — es escritor, fotógrafo o naturalista que lleva décadas sobre el terreno. Decide dónde detenerse y cuándo seguir, y modela cada jornada según lo que el paisaje devuelve.",
+    "goodToKnow": "BUENO SABER",
+    "goodToKnowItems": [
+      "Grupos pequeños de hasta 12 viajeros",
+      "Todos los traslados por tierra están incluidos",
+      "Dos cenas locales forman parte del programa",
+      "Se recomienda un seguro de viaje"
+    ],
+    "byline": "POR",
+    "keepReading": "SEGUIR LEYENDO",
+    "tags": "ETIQUETAS",
+    "share": "COMPARTIR",
+    "backToList": "← VOLVER A {{section}}",
+    "loading": "Cargando…",
+    "notFound": "No hemos encontrado esa entrada.",
+    "notFoundCta": "VOLVER AL INICIO"
+  }
+}

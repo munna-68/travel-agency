@@ -1,0 +1,180 @@
+{
+  "common": {
+    "languageLabel": "Sprache",
+    "openMenu": "Menü öffnen",
+    "explore": "Entdecken",
+    "loading": "Wird geladen"
+  },
+  "nav": {
+    "home": "Start",
+    "about": "Über uns",
+    "destinations": "Reiseziele",
+    "tours": "Reisen",
+    "journal": "Journal",
+    "brandHome": "Local Explorer Startseite"
+  },
+  "footer": {
+    "brand": "LOCAL EXPLORER",
+    "privacy": "Datenschutz",
+    "terms": "Nutzungsbedingungen",
+    "contact": "Kontakt",
+    "press": "Pressemappe"
+  },
+  "home": {
+    "heroAria": "Local Explorer Startseite",
+    "heroCta": "Routen entdecken →",
+    "highlightsAria": "Höhepunkte der Agentur",
+    "stats": {
+      "routesLabel": "KURATIERTE ROUTEN",
+      "partnersLabel": "LOKALE PARTNER",
+      "toneLabel": "EDITORIALER TON"
+    },
+    "highlights": {
+      "destinationsLabel": "REISEZIELE",
+      "destinationsTitle": "Wählen Sie das Tempo, das zu Ihnen passt.",
+      "destinationsCopy": "Bergexkursionen, langsame Küstenreisen und städtische Routen, gestaltet von Menschen, die vor Ort leben.",
+      "toursLabel": "REISEN",
+      "toursTitle": "Geführte Erlebnisse mit redaktioneller Zurückhaltung.",
+      "toursCopy": "Kleine Gruppen, konzipiert um Textur, Timing und Zugang — nicht um generische Checklisten.",
+      "journalLabel": "JOURNAL",
+      "journalTitle": "Geschichten aus den Orten, die die Marke prägen.",
+      "journalCopy": "Notizen, Feldberichte und leise Beobachtungen der Menschen und Landschaften hinter unseren Routen.",
+      "enter": "EINTRETEN →"
+    },
+    "band": {
+      "kicker": "HIER BEGINNEN",
+      "title": "Reisen, die sich redaktionell lesen — nicht zusammengestückt.",
+      "action": "JOURNAL LESEN →"
+    }
+  },
+  "about": {
+    "heroTitle": ["JENSEITS", "DER KARTE"],
+    "heroCopy": "Seit 2014 kuratieren wir Reisen, die über den klassischen Tourismus hinausgehen. Die besten Geschichten findet man nicht in Reiseführern, sondern in den stillen Winkeln der Welt, geteilt von denen, die dort zuhause sind.",
+    "philosophyTitle": "UNSERE PHILOSOPHIE",
+    "philosophyBody1": "Wir verkaufen keine Reisen, wir schaffen Verbindungen. Local Explorer wurde mit der einfachen Idee gegründet, dass Reisen ein gegenseitiger Austausch von Kultur, Respekt und Staunen sein sollte.",
+    "philosophyBody2": "Jedes Reiseziel in unserem Portfolio wird persönlich von unserem Team geprüft. Wir verbringen Wochen vor Ort, prüfen Partner, probieren Küchen und finden verborgene Pfade, die auf keiner digitalen Karte verzeichnet sind.",
+    "values": [
+      "100% LOKALE GUIDES",
+      "KOHLENSTOFFNEUTRALE BILANZ",
+      "PROJEKTE ZUR KULTURELLEN ERHALTUNG"
+    ],
+    "statsAria": "Local Explorer Statistiken",
+    "stats": {
+      "years": "JAHRE DES ERKUNDENS",
+      "countries": "LÄNDER",
+      "memories": "ERINNERUNGEN",
+      "impact": "LOKALE WIRKUNG"
+    },
+    "curatorsTitle": "DIE KURATOREN",
+    "curatorsIntro": "Eine Gemeinschaft aus Fotografen, Autoren und Entdeckern, vereint durch eine einzige Obsession: das Finden.",
+    "curatorRoles": {
+      "founder": "GRÜNDER & CEO",
+      "content": "LEITUNG INHALTE",
+      "expedition": "LEITENDER EXPEDITIONIST",
+      "ops": "LEITUNG OPERATIONEN"
+    },
+    "storyTitle": "BEGINNEN SIE IHRE GESCHICHTE",
+    "storyAction": "REISEN ENTDECKEN →"
+  },
+  "destinations": {
+    "heroTitle": "WOHIN ALS NÄCHSTES?",
+    "heroCopy": "Entfliehen Sie dem Alltag mit unserer Auswahl an Rückzugsorten rund um den Globus. Von den nebelverhangenen Gipfeln Guili bis zu den stillen Tempeln Kyotos — entdecken Sie die Kunst des Wanderns neu.",
+    "statsAria": "Reiseziel-Statistiken",
+    "stats": {
+      "tours": "KURATIERTE REISEN",
+      "hubs": "GLOBALE ZENTREN",
+      "support": "LOKALE BETREUUNG"
+    },
+    "viewExpedition": "EXPEDITION ANSEHEN →",
+    "revealKicker": "EXKLUSIVE ANKÜNDIGUNG",
+    "revealCopy": "Erleben Sie die Caldera ohne die Menschenmengen. Unser neues Nachtjournal erkundet das verborgene Leben der Kykladen im Mondlicht.",
+    "revealDate": "AB HERBST '24",
+    "newsletterTitle": "DAS WÖCHENTLICHE JOURNAL",
+    "newsletterCopy": "Schließen Sie sich über 50.000 Entdeckern an und erhalten Sie kuratierte Reisegeschichten, verborgene Ortsführer und exklusiven Vorabzugang zu neuen Reisen.",
+    "emailPlaceholder": "IHRE E-MAIL-ADRESSE",
+    "emailAria": "E-Mail-Adresse",
+    "subscribe": "ABONNIEREN",
+    "quote": "„REISEN IST DAS EINZIGE, WAS MAN KAUFEN KANN UND DABEI REICHER WIRD.“",
+    "quoteFooter": "— ANONYMER ENTDECKER"
+  },
+  "tours": {
+    "kicker": "SAISON 2024",
+    "heroTitle": ["UNSERE KURATIERTEN", "REISEN"],
+    "heroCopy": "Jenseits der Standardrouten. Wir haben jede Reise sorgfältig gestaltet, um Sie in die authentische Seele jedes Ortes einzutauchen — geführt von den Menschen, die dort leben.",
+    "statLabel": "AKTIVE REISEN",
+    "filtersAria": "Reisefilter",
+    "filters": [
+      "ALLE ERLEBNISSE",
+      "WANDERN",
+      "KULTURELL",
+      "JEEP",
+      "GASTRONOMIE"
+    ],
+    "duration": "DAUER",
+    "price": "PREIS",
+    "exploreTour": "REISE ENTDECKEN →",
+    "customTitle": "GESTALTEN SIE IHRE EIGENE REISE",
+    "customCopy": "Sie finden nicht genau das, was Sie suchen? Unsere Reise-Architekten entwerfen einen maßgeschneiderten Reiseplan, abgestimmt auf Ihre Interessen und Ihr Tempo.",
+    "customLink": "INDIVIDUELLE ANFRAGE →",
+    "ctaTitle": "BEREIT FÜR DAS ABENTEUER?",
+    "ctaButton": "GRUPPEN-ANGEBOT ANFRAGEN →"
+  },
+  "journal": {
+    "kicker": "BAND 04 / EDITORIAL SERIE",
+    "title": "REISEERZÄHLUNGEN",
+    "heroCopy": "Immersive Geschichten vom Rand der Welt, kuratiert für alle, die das Authentische, das Verborgene und das Erhabene suchen.",
+    "entriesLabel": "AKTUELLE BEITRÄGE",
+    "tabsAria": "Journal-Kategorien",
+    "tabs": [
+      "ALLE GESCHICHTEN",
+      "VERSTECKTE JUWELEN",
+      "LOKALE FÜHRER",
+      "REISETIPPS"
+    ],
+    "moreLink": "MEHR GESCHICHTEN ENTDECKEN →",
+    "subscribeTitle": "WERDEN SIE TEIL UNSERES WOCHENBRIEFS",
+    "subscribeCopy": "Kein Spam — nur kuratierte Reise-Inspiration, geheime Ortshinweise und redaktionelle Geschichten, jeden Sonntagmorgen in Ihrem Postfach.",
+    "emailLabel": "E-MAIL-ADRESSE",
+    "emailAria": "E-Mail-Adresse",
+    "subscribeButton": "ABONNIEREN",
+    "checkbox": "ICH STIMME DER DATENSCHUTZERKLÄRUNG UND DEN NUTZUNGSBEDINGUNGEN ZU.",
+    "quote": "„REISEN IST DAS EINZIGE, WAS MAN KAUFEN KANN UND DABEI REICHER WIRD.“",
+    "quoteFooter": "DIE LOCAL EXPLORER PHILOSOPHIE",
+    "watermark": "LOCAL"
+  },
+  "detail": {
+    "back": "← ZURÜCK",
+    "exploreTourCta": "DIESE REISE BUCHEN",
+    "readMoreCta": "GESAMTEN BEITRAG LESEN",
+    "viewExpedition": "EXPEDITION ANSEHEN",
+    "highlights": "HÖHEPUNKTE",
+    "bestTime": "BESTE REISEZEIT",
+    "duration": "DAUER",
+    "groupSize": "GRUPPENGRÖSSE",
+    "startingFrom": "AB",
+    "difficulty": "SCHWIERIGKEIT",
+    "stay": "WO SIE ÜBERNACHTEN",
+    "stayPlaceholder": "Handverlesene Boutique-Unterkünfte, passend zum redaktionellen Geist der Reise.",
+    "itinerary": "REISEVERLAUF",
+    "stayBody": "Jede Unterkunft in unserem Netzwerk wurde wegen ihres leisen Charakters und ihrer Nähe zu den Erlebnissen entlang der Route ausgewählt. Freuen Sie sich auf lokal geführte Lodges, restaurierte Heritage-Häuser und designorientierte Hotels, in denen das Zimmer ein Ort zum Ausruhen ist, nicht zum Verschwinden.",
+    "philosophy": "DER EDITORIALE BLICK",
+    "philosophyBody": "Wir haben diese Route für Reisende konzipiert, die eine Reise an den Begegnungen und der gewonnenen Stille messen — nicht an einer abgehakten Liste. Das Tempo ist bewusst, der Zugang ist kuratiert, und die Momente sind jenen vorbehalten, die reisen, um etwas zu fühlen.",
+    "guide": "IHR LOKALER GUIDE",
+    "guideBody": "Ein regionaler Experte begleitet jede Abreise. Kein Reiseleiter — sondern Autor, Fotograf oder Naturforscher, der seit Jahrzehnten vor Ort lebt. Er entscheidet, wo man verweilt und wann man weiterzieht, und gestaltet jeden Tag nach dem, was die Landschaft zurückgibt.",
+    "goodToKnow": "GUT ZU WISSEN",
+    "goodToKnowItems": [
+      "Kleine Gruppen bis zu 12 Reisenden",
+      "Alle Bodentransfers sind inklusive",
+      "Zwei lokale Abendessen sind Teil des Programms",
+      "Eine Reiseversicherung wird empfohlen"
+    ],
+    "byline": "VON",
+    "keepReading": "WEITERLESEN",
+    "tags": "SCHLAGWORTE",
+    "share": "TEILEN",
+    "backToList": "← ZURÜCK ZU {{section}}",
+    "loading": "Wird geladen…",
+    "notFound": "Wir konnten diesen Beitrag nicht finden.",
+    "notFoundCta": "ZUR STARTSEITE"
+  }
+}

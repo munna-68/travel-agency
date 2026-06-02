@@ -65,6 +65,13 @@
   position: relative;
   overflow: hidden;
   border-radius: 0.9rem;
+  cursor: pointer;
+  transition: transform 280ms ease, box-shadow 280ms ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 36px -16px rgba(28, 27, 27, 0.24);
 }
 
 .card img {
@@ -72,6 +79,11 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: transform 600ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.card:hover img {
+  transform: scale(1.04);
 }
 
 .cardLarge {
@@ -200,6 +212,13 @@
   line-height: var(--label-caps-line-height);
   font-weight: var(--label-caps-font-weight);
   letter-spacing: var(--label-caps-letter-spacing);
+  transition: transform 220ms ease, opacity 220ms ease;
+}
+
+.viewLink:hover {
+  transform: translateX(3px);
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 .revealCard {
@@ -210,6 +229,12 @@
   flex-direction: column;
   justify-content: space-between;
   min-height: 100%;
+  transition: transform 280ms ease, box-shadow 280ms ease;
+}
+
+.revealCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 36px -16px rgba(28, 27, 27, 0.2);
 }
 
 .revealKicker {
@@ -259,6 +284,13 @@
   background: var(--primary);
   color: var(--on-primary);
   font-size: 16px;
+  cursor: pointer;
+  transition: transform 220ms ease, background-color 220ms ease;
+}
+
+.arrowButton:hover {
+  transform: translate(2px, -2px);
+  background: var(--inverse-surface);
 }
 
 .newsletter {
@@ -307,6 +339,14 @@
   font-family: var(--label-caps-font-family);
   font-size: 11px;
   letter-spacing: 0.08em;
+  transition: border-color 220ms ease, background-color 220ms ease;
+}
+
+.emailInput:hover,
+.emailInput:focus {
+  border-color: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.04);
+  outline: none;
 }
 
 .emailInput::placeholder {
@@ -324,6 +364,14 @@
   font-size: var(--label-caps-font-size);
   font-weight: var(--label-caps-font-weight);
   letter-spacing: var(--label-caps-letter-spacing);
+  cursor: pointer;
+  transition: background-color 220ms ease, color 220ms ease, transform 220ms ease;
+}
+
+.subscribeButton:hover {
+  background: var(--on-surface);
+  color: var(--on-primary);
+  transform: translateY(-1px);
 }
 
 .quoteBox {

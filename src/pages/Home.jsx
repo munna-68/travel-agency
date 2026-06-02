@@ -1,33 +1,36 @@
+import { useTranslation } from "react-i18next";
 import styles from "./Home.module.css";
 
-const highlights = [
-  {
-    label: "DESTINATIONS",
-    title: "Choose the route that matches your pace.",
-    copy: "Mountain escapes, coastal slow travel, and city-forward itineraries shaped by local knowledge.",
-    href: "/destinations",
-    image: "/img/kyoto-autumn-path.svg",
-  },
-  {
-    label: "TOURS",
-    title: "Guided experiences with editorial restraint.",
-    copy: "Small-group journeys designed around texture, timing, and access instead of generic checklists.",
-    href: "/tours",
-    image: "/img/about-story.svg",
-  },
-  {
-    label: "JOURNAL",
-    title: "Stories from the places that shape the brand.",
-    copy: "Notes, field dispatches, and quiet observations from the people and landscapes behind the routes.",
-    href: "/journal",
-    image: "/img/journal-hero-valley.svg",
-  },
-];
-
 export default function Home() {
+  const { t } = useTranslation();
+
+  const highlights = [
+    {
+      label: t("home.highlights.destinationsLabel"),
+      title: t("home.highlights.destinationsTitle"),
+      copy: t("home.highlights.destinationsCopy"),
+      href: "/destinations",
+      image: "/img/kyoto-autumn-path.svg",
+    },
+    {
+      label: t("home.highlights.toursLabel"),
+      title: t("home.highlights.toursTitle"),
+      copy: t("home.highlights.toursCopy"),
+      href: "/tours",
+      image: "/img/about-story.svg",
+    },
+    {
+      label: t("home.highlights.journalLabel"),
+      title: t("home.highlights.journalTitle"),
+      copy: t("home.highlights.journalCopy"),
+      href: "/journal",
+      image: "/img/journal-hero-valley.svg",
+    },
+  ];
+
   return (
     <main className={styles.page}>
-      <section className={styles.hero} aria-label="Local Explorer landing hero">
+      <section className={styles.hero} aria-label={t("home.heroAria")}>
         <div className={styles.heroInner}>
           <div className={styles.heroVisual}>
             <img
@@ -36,25 +39,25 @@ export default function Home() {
               alt=""
             />
             <div className={styles.heroCTA}>
-              <a href="/destinations">Explore our routes →</a>
+              <a href="/destinations">{t("home.heroCta")}</a>
             </div>
           </div>
         </div>
       </section>
 
-      <section className={styles.statsSection} aria-label="Agency highlights">
+      <section className={styles.statsSection} aria-label={t("home.highlightsAria")}>
         <div className={styles.statsGrid}>
           <div className={styles.statItem}>
             <strong>70+</strong>
-            <span>ROUTES CURATED</span>
+            <span>{t("home.stats.routesLabel")}</span>
           </div>
           <div className={styles.statItem}>
             <strong>12</strong>
-            <span>LOCAL PARTNERSHIPS</span>
+            <span>{t("home.stats.partnersLabel")}</span>
           </div>
           <div className={styles.statItem}>
             <strong>100%</strong>
-            <span>EDITORIAL TONE</span>
+            <span>{t("home.stats.toneLabel")}</span>
           </div>
         </div>
       </section>
@@ -76,7 +79,9 @@ export default function Home() {
                 <span className={styles.highlightLabel}>{highlight.label}</span>
                 <h2>{highlight.title}</h2>
                 <p>{highlight.copy}</p>
-                <span className={styles.highlightLink}>ENTER →</span>
+                <span className={styles.highlightLink}>
+                  {t("home.highlights.enter")}
+                </span>
               </div>
             </a>
           ))}
@@ -86,12 +91,12 @@ export default function Home() {
       <section className={styles.band}>
         <div className={styles.bandInner}>
           <div>
-            <div className={styles.bandKicker}>START HERE</div>
-            <h2>Travel that feels edited, not assembled.</h2>
+            <div className={styles.bandKicker}>{t("home.band.kicker")}</div>
+            <h2>{t("home.band.title")}</h2>
           </div>
 
           <a className={styles.bandAction} href="/journal">
-            READ THE JOURNAL →
+            {t("home.band.action")}
           </a>
         </div>
       </section>

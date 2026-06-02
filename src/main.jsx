@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 import App from "./App";
 import PageTransitionProvider from "./components/PageTransition";
+import "./i18n";
 import "./tokens.css";
 import "./styles/global.css";
 

@@ -1,79 +1,95 @@
+import { useTranslation } from "react-i18next";
+import { destinations } from "../data/destinations";
+import NavLink from "../components/NavLink";
 import styles from "./Destinations.module.css";
 
+const santorini = {
+  place: "SANTORINI, GREECE",
+};
+
 export default function Destinations() {
+  const { t } = useTranslation();
+  const [large, tall, square] = destinations;
+
   return (
     <main className={styles.page}>
       <section className={styles.hero}>
         <div className={styles.heroInner}>
-          <h1 className={styles.heroTitle}>WHERE TO NEXT?</h1>
-          <p className={styles.heroCopy}>
-            Escape the ordinary with our curated selection of global retreats.
-            From the mist-covered peaks of Guilin to the serene temples of
-            Kyoto, rediscover the art of wandering.
-          </p>
+          <h1 className={styles.heroTitle}>{t("destinations.heroTitle")}</h1>
+          <p className={styles.heroCopy}>{t("destinations.heroCopy")}</p>
         </div>
       </section>
 
       <section className={styles.featureGridSection}>
         <div className={styles.content}>
           <div className={styles.featureGrid}>
-            <article className={`${styles.card} ${styles.cardLarge}`}>
-              <img src="/img/kyoto-autumn-path.svg" alt="" />
-              <span className={styles.tagLight}>KYOTO, JAPAN</span>
+            <NavLink
+              to={`/destinations/${large.slug}`}
+              className={`${styles.card} ${styles.cardLarge}`}
+            >
+              <img src={large.image} alt="" />
+              <span className={styles.tagLight}>{large.place}</span>
               <div className={styles.overlayBottomLeft}>
-                <h2>THE AUTUMN PATH</h2>
-                <p>
-                  Wander through ancient gateways and witness the seasonal
-                  transformation of the imperial city.
-                </p>
+                <h2>{large.title}</h2>
+                <p>{large.intro}</p>
               </div>
-            </article>
+            </NavLink>
 
-            <article className={`${styles.card} ${styles.cardTight}`}>
-              <img src="/img/montana-glacier-valley.svg" alt="" />
-              <span className={styles.tagDark}>MONTANA, USA</span>
-              <h2 className={styles.bottomTitle}>GLACIER VALLEY</h2>
-            </article>
+            <NavLink
+              to={`/destinations/${tall.slug}`}
+              className={`${styles.card} ${styles.cardTight}`}
+            >
+              <img src={tall.image} alt="" />
+              <span className={styles.tagDark}>{tall.place}</span>
+              <h2 className={styles.bottomTitle}>{tall.title}</h2>
+            </NavLink>
           </div>
 
-          <dl className={styles.stats} aria-label="Destination statistics">
+          <dl className={styles.stats} aria-label={t("destinations.statsAria")}>
             <div>
               <dt>70+</dt>
-              <dd>CURATED TOURS</dd>
+              <dd>{t("destinations.stats.tours")}</dd>
             </div>
             <div>
               <dt>12</dt>
-              <dd>GLOBAL HUBS</dd>
+              <dd>{t("destinations.stats.hubs")}</dd>
             </div>
             <div>
               <dt>24/7</dt>
-              <dd>LOCAL SUPPORT</dd>
+              <dd>{t("destinations.stats.support")}</dd>
             </div>
           </dl>
 
           <div className={styles.secondaryGrid}>
-            <article className={`${styles.card} ${styles.cardSquare}`}>
-              <img src="/img/guilin-emerald-curve.svg" alt="" />
-              <span className={styles.tagLightTopRight}>GUILIN, CHINA</span>
+            <NavLink
+              to={`/destinations/${square.slug}`}
+              className={`${styles.card} ${styles.cardSquare}`}
+            >
+              <img src={square.image} alt="" />
+              <span className={styles.tagLightTopRight}>{square.place}</span>
               <div className={styles.overlayBottomLeft}>
-                <h2>THE EMERALD CURVE</h2>
-                <a className={styles.viewLink} href="/journal">
-                  VIEW EXPEDITION →
-                </a>
+                <h2>{square.title}</h2>
+                <span className={styles.viewLink}>
+                  {t("destinations.viewExpedition")}
+                </span>
               </div>
-            </article>
+            </NavLink>
 
             <article className={styles.revealCard}>
-              <p className={styles.revealKicker}>EXCLUSIVE REVEAL</p>
-              <h2 className={styles.revealTitle}>SANTORINI AFTER DARK</h2>
+              <p className={styles.revealKicker}>
+                {t("destinations.revealKicker")}
+              </p>
+              <h2 className={styles.revealTitle}>
+                {santorini.place.split(",")[0]} AFTER DARK
+              </h2>
               <p className={styles.revealCopy}>
-                Experience the caldera without the crowds. Our new nighttime
-                journal explores the secret life of the Cyclades under the
-                moonlight.
+                {t("destinations.revealCopy")}
               </p>
 
               <div className={styles.revealFooter}>
-                <div className={styles.revealDate}>COMING FALL ’24</div>
+                <div className={styles.revealDate}>
+                  {t("destinations.revealDate")}
+                </div>
                 <span className={styles.arrowButton} aria-hidden="true">
                   ↗
                 </span>
@@ -87,29 +103,32 @@ export default function Destinations() {
         <div className={styles.content}>
           <div className={styles.newsletterGrid}>
             <div className={styles.newsletterCopyBlock}>
-              <h2 className={styles.newsletterTitle}>THE WEEKLY JOURNAL</h2>
+              <h2 className={styles.newsletterTitle}>
+                {t("destinations.newsletterTitle")}
+              </h2>
               <p className={styles.newsletterCopy}>
-                Join 50,000+ explorers and receive curated travel stories,
-                hidden destination guides, and exclusive early access to new
-                tours.
+                {t("destinations.newsletterCopy")}
               </p>
 
-              <form className={styles.subscribeForm}>
+              <form
+                className={styles.subscribeForm}
+                onSubmit={(event) => event.preventDefault()}
+              >
                 <input
                   className={styles.emailInput}
                   type="email"
-                  placeholder="YOUR EMAIL ADDRESS"
-                  aria-label="Email address"
+                  placeholder={t("destinations.emailPlaceholder")}
+                  aria-label={t("destinations.emailAria")}
                 />
                 <button className={styles.subscribeButton} type="submit">
-                  SUBSCRIBE
+                  {t("destinations.subscribe")}
                 </button>
               </form>
             </div>
 
             <blockquote className={styles.quoteBox}>
-              <p>“TRAVEL IS THE ONLY THING YOU BUY THAT MAKES YOU RICHER.”</p>
-              <footer>— ANONYMOUS EXPLORER</footer>
+              <p>{t("destinations.quote")}</p>
+              <footer>{t("destinations.quoteFooter")}</footer>
             </blockquote>
           </div>
         </div>

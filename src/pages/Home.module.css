@@ -126,12 +126,23 @@
   background: var(--primary);
   color: var(--on-primary);
   border-top-right-radius: 22px;
+  transition: background-color 220ms ease, transform 220ms ease;
+}
+
+.primaryAction:hover {
+  background: var(--inverse-surface);
 }
 
 .secondaryAction {
   border: 1px solid var(--outline-variant);
   background: var(--surface-container-lowest);
   color: var(--on-surface);
+  transition: background-color 220ms ease, border-color 220ms ease;
+}
+
+.secondaryAction:hover {
+  background: var(--surface-container-high);
+  border-color: var(--on-surface);
 }
 
 .heroVisual {
@@ -181,6 +192,7 @@
   letter-spacing: var(--label-caps-letter-spacing);
   text-transform: none;
   cursor: pointer;
+  transition: background-color 220ms ease, color 220ms ease;
 }
 
 .heroTabActive {
@@ -212,6 +224,12 @@
   font-size: 14px;
   letter-spacing: var(--label-caps-letter-spacing);
   text-decoration: none;
+  transition: background-color 220ms ease, transform 220ms ease;
+}
+
+.heroCTA a:hover {
+  background: var(--primary);
+  transform: translateY(-1px);
 }
 
 .statsSection {
@@ -260,6 +278,13 @@
   border-radius: 0.9rem;
   min-height: 420px;
   background: var(--surface-container-highest);
+  cursor: pointer;
+  transition: transform 280ms ease, box-shadow 280ms ease;
+}
+
+.highlightCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 36px -16px rgba(28, 27, 27, 0.22);
 }
 
 .highlightImage {
@@ -267,6 +292,11 @@
   height: 100%;
   object-fit: cover;
   display: block;
+  transition: transform 600ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.highlightCard:hover .highlightImage {
+  transform: scale(1.04);
 }
 
 .highlightOverlay {
@@ -306,6 +336,13 @@
   margin-top: 4px;
   background: var(--surface-container-lowest);
   color: var(--on-surface);
+  transition: background-color 220ms ease, color 220ms ease, transform 220ms ease;
+}
+
+.highlightLink:hover {
+  background: var(--on-surface);
+  color: var(--on-primary);
+  transform: translateX(2px);
 }
 
 .band {
@@ -341,6 +378,12 @@
   color: var(--on-primary);
   border-top-right-radius: 22px;
   white-space: nowrap;
+  transition: background-color 220ms ease, transform 220ms ease;
+}
+
+.bandAction:hover {
+  background: var(--inverse-surface);
+  transform: translateY(-1px);
 }
 
 @media (max-width: 900px) {

@@ -1,43 +1,47 @@
+import { useTranslation } from "react-i18next";
 import styles from "./About.module.css";
 
 const curators = [
   {
-    role: "FOUNDER & CEO",
+    roleKey: "about.curatorRoles.founder",
     name: "MARCUS THORNE",
     image: "/img/curator-marcus.svg",
   },
   {
-    role: "HEAD OF CONTENT",
+    roleKey: "about.curatorRoles.content",
     name: "ELENA ROSSI",
     image: "/img/curator-elena.svg",
   },
   {
-    role: "LEAD EXPEDITIONIST",
+    roleKey: "about.curatorRoles.expedition",
     name: "SIDDHARTH MEHTA",
     image: "/img/curator-siddharth.svg",
   },
   {
-    role: "OPERATIONS DIRECTOR",
+    roleKey: "about.curatorRoles.ops",
     name: "CHLOE CHEN",
     image: "/img/curator-chloe.svg",
   },
 ];
 
 export default function About() {
+  const { t } = useTranslation();
+  const heroTitleParts = t("about.heroTitle", { returnObjects: true });
+  const values = t("about.values", { returnObjects: true });
+
   return (
     <main className={styles.page}>
       <section className={styles.hero}>
         <div className={styles.heroInner}>
           <h1 className={styles.heroTitle}>
-            <span>BEYOND</span>
-            <span>THE MAP</span>
+            {Array.isArray(heroTitleParts) ? (
+              heroTitleParts.map((part, i) => <span key={i}>{part}</span>)
+            ) : (
+              <span>{heroTitleParts}</span>
+            )}
           </h1>
 
-          <p className={styles.heroCopy}>
-            Since 2014, we’ve been curating journeys that transcend traditional
-            tourism. We believe the best stories aren’t found in guidebooks, but
-            in the quiet corners of the world shared by those who call it home.
-          </p>
+          <p className={styles.heroCopy}>{t("about.heroCopy")}</p>
         </div>
       </section>
 
@@ -50,45 +54,36 @@ export default function About() {
           />
 
           <div className={styles.philosophyContent}>
-            <h2 className={styles.sectionTitle}>OUR PHILOSOPHY</h2>
-            <p className={styles.body}>
-              We don’t just sell trips; we foster connections. Local Explorer
-              was founded on the radical idea that travel should be a two-way
-              exchange of culture, respect, and wonder.
-            </p>
-            <p className={styles.body}>
-              Every destination in our portfolio is vetted by our team
-              personally. We spend weeks on the ground, vetting partners,
-              tasting menus, and finding the hidden trailheads that aren’t
-              marked on any digital map.
-            </p>
+            <h2 className={styles.sectionTitle}>{t("about.philosophyTitle")}</h2>
+            <p className={styles.body}>{t("about.philosophyBody1")}</p>
+            <p className={styles.body}>{t("about.philosophyBody2")}</p>
 
             <ul className={styles.values}>
-              <li>100% LOCAL GUIDES</li>
-              <li>CARBON NEUTRAL FOOTPRINT</li>
-              <li>CULTURAL PRESERVATION PROJECTS</li>
+              {(Array.isArray(values) ? values : []).map((value) => (
+                <li key={value}>{value}</li>
+              ))}
             </ul>
           </div>
         </div>
       </section>
 
-      <section className={styles.stats} aria-label="Local Explorer stats">
+      <section className={styles.stats} aria-label={t("about.statsAria")}>
         <dl className={styles.statsGrid}>
           <div className={styles.statItem}>
             <dt>12</dt>
-            <dd>YEARS EXPLORING</dd>
+            <dd>{t("about.stats.years")}</dd>
           </div>
           <div className={styles.statItem}>
             <dt>45+</dt>
-            <dd>COUNTRIES</dd>
+            <dd>{t("about.stats.countries")}</dd>
           </div>
           <div className={styles.statItem}>
             <dt>2.4K</dt>
-            <dd>MEMORIES MADE</dd>
+            <dd>{t("about.stats.memories")}</dd>
           </div>
           <div className={styles.statItem}>
             <dt>100%</dt>
-            <dd>LOCAL IMPACT</dd>
+            <dd>{t("about.stats.impact")}</dd>
           </div>
         </dl>
       </section>
@@ -96,11 +91,8 @@ export default function About() {
       <section className={styles.curators}>
         <div className={styles.curatorsInner}>
           <div className={styles.curatorsHeader}>
-            <h2 className={styles.sectionTitle}>THE CURATORS</h2>
-            <p className={styles.curatorsIntro}>
-              A collective of photographers, writers, and explorers united by a
-              single obsession: discovery.
-            </p>
+            <h2 className={styles.sectionTitle}>{t("about.curatorsTitle")}</h2>
+            <p className={styles.curatorsIntro}>{t("about.curatorsIntro")}</p>
           </div>
 
           <div className={styles.curatorGrid}>
@@ -111,7 +103,7 @@ export default function About() {
                   src={curator.image}
                   alt=""
                 />
-                <p className={styles.curatorRole}>{curator.role}</p>
+                <p className={styles.curatorRole}>{t(curator.roleKey)}</p>
                 <h3 className={styles.curatorName}>{curator.name}</h3>
               </article>
             ))}
@@ -127,9 +119,9 @@ export default function About() {
             alt=""
           />
           <div className={styles.storyOverlay}>
-            <h2 className={styles.storyTitle}>START YOUR STORY</h2>
+            <h2 className={styles.storyTitle}>{t("about.storyTitle")}</h2>
             <a className={styles.storyButton} href="/tours">
-              EXPLORE TOURS →
+              {t("about.storyAction")}
             </a>
           </div>
         </div>

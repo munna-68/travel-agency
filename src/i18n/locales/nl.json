@@ -1,0 +1,180 @@
+{
+  "common": {
+    "languageLabel": "Taal",
+    "openMenu": "Menu openen",
+    "explore": "Verken",
+    "loading": "Laden"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "Over ons",
+    "destinations": "Bestemmingen",
+    "tours": "Reizen",
+    "journal": "Dagboek",
+    "brandHome": "Local Explorer home"
+  },
+  "footer": {
+    "brand": "LOCAL EXPLORER",
+    "privacy": "Privacybeleid",
+    "terms": "Servicevoorwaarden",
+    "contact": "Contact",
+    "press": "Perskit"
+  },
+  "home": {
+    "heroAria": "Local Explorer landingspagina",
+    "heroCta": "Onze routes verkennen →",
+    "highlightsAria": "Hoogtepunten van het bureau",
+    "stats": {
+      "routesLabel": "GECURATEERDE ROUTES",
+      "partnersLabel": "LOKALE PARTNERS",
+      "toneLabel": "EDITORIALE TOON"
+    },
+    "highlights": {
+      "destinationsLabel": "BESTEMMINGEN",
+      "destinationsTitle": "Kies het tempo dat bij u past.",
+      "destinationsCopy": "Bergvluchten, langzame kustreizen en stedelijke routes, vormgegeven door wie er ter plekke woont.",
+      "toursLabel": "REIZEN",
+      "toursTitle": "Begeleide ervaringen met redactionele terughoudendheid.",
+      "toursCopy": "Kleine groepen, ontworpen rond textuur, timing en toegang — niet om generieke checklists.",
+      "journalLabel": "DAGBOEK",
+      "journalTitle": "Verhalen van de plekken die het merk vormgeven.",
+      "journalCopy": "Notities, veldverslagen en stille observaties van de mensen en landschappen achter onze routes.",
+      "enter": "NAAR BINNEN →"
+    },
+    "band": {
+      "kicker": "BEGIN HIER",
+      "title": "Reizen die gelezen willen worden — nooit in elkaar geflanst.",
+      "action": "LEES HET DAGBOEK →"
+    }
+  },
+  "about": {
+    "heroTitle": ["VOORBIJ", "DE KAART"],
+    "heroCopy": "Sinds 2014 stellen we reizen samen die verder gaan dan het traditionele toerisme. De mooiste verhalen vind je niet in reisgidsen, maar in de stille hoeken van de wereld, gedeeld door wie er woont.",
+    "philosophyTitle": "ONZE FILOSOFIE",
+    "philosophyBody1": "We verkopen geen reizen, we weven verbindingen. Local Explorer is ontstaan uit een eenvoudig idee: reizen moet een wederzijdse uitwisseling van cultuur, respect en verwondering zijn.",
+    "philosophyBody2": "Elke bestemming in ons portfolio wordt persoonlijk gevalideerd door het team. We brengen weken door op het terrein, kiezen partners, proeven keukens en vinden verborgen paden die op geen enkele digitale kaart staan.",
+    "values": [
+      "100% LOKALE GIDSEN",
+      "CO₂-NEUTRALE VOETAFDRUK",
+      "PROJECTEN VOOR CULTUREEL BEHOUD"
+    ],
+    "statsAria": "Local Explorer statistieken",
+    "stats": {
+      "years": "JAREN VERKENNEND",
+      "countries": "LANDEN",
+      "memories": "HERINNERINGEN GEMAAKT",
+      "impact": "LOKALE IMPACT"
+    },
+    "curatorsTitle": "DE CURATOREN",
+    "curatorsIntro": "Een collectief van fotografen, schrijvers en ontdekkers, verenigd door één obsessie: ontdekking.",
+    "curatorRoles": {
+      "founder": "OPRICHTER & CEO",
+      "content": "HOOFD INHOUD",
+      "expedition": "EXPEDITIELEIDER",
+      "ops": "DIRECTEUR OPERATIES"
+    },
+    "storyTitle": "BEGIN UW VERHAAL",
+    "storyAction": "REIZEN VERKENNEN →"
+  },
+  "destinations": {
+    "heroTitle": "WAARHEEN, NU?",
+    "heroCopy": "Ontsnap aan het gewone met onze selectie van retraites wereldwijd. Van de nevelige pieken van Guilin tot de serene tempels van Kyoto — herontdek de kunst van het dwalen.",
+    "statsAria": "Bestemmingsstatistieken",
+    "stats": {
+      "tours": "GECURATEERDE REIZEN",
+      "hubs": "WERELDBRANCHES",
+      "support": "LOKALE ONDERSTEUNING"
+    },
+    "viewExpedition": "BEZOEK DE EXPEDITIE →",
+    "revealKicker": "EXCLUSIEVE ONTHULLING",
+    "revealCopy": "Beleef de caldera zonder de drukte. Ons nieuwe nachtdagboek verkent het verborgen leven van de Cycladen onder maanlicht.",
+    "revealDate": "BESCHIKBAAR IN HERFST '24",
+    "newsletterTitle": "HET WEKELIJKSE DAGBOEK",
+    "newsletterCopy": "Sluit u aan bij meer dan 50 000 ontdekkers en ontvang gecureerde reisverhalen, gidsen voor verborgen plekken en exclusieve vroege toegang tot nieuwe reizen.",
+    "emailPlaceholder": "UW E-MAILADRES",
+    "emailAria": "E-mailadres",
+    "subscribe": "ABONNEREN",
+    "quote": "„REIZEN IS HET ENIGE DAT JE KOOPT EN JE RIJKER MAAKT.”",
+    "quoteFooter": "— ANONIEME ONTDEKKER"
+  },
+  "tours": {
+    "kicker": "SEIZOEN 2024",
+    "heroTitle": ["ONZE GECURATEERDE", "REIZEN"],
+    "heroCopy": "Verder dan de standaardroutes. We hebben elke reis zorgvuldig ontworpen om u onder te dompelen in de authentieke ziel van elke bestemming, begeleid door wie er thuis is.",
+    "statLabel": "ACTIEVE REIZEN",
+    "filtersAria": "Reisfilters",
+    "filters": [
+      "ALLE ERVARINGEN",
+      "WANDELEN",
+      "CULTUREEL",
+      "JEEP",
+      "GASTRONOMIE"
+    ],
+    "duration": "DUUR",
+    "price": "PRIJS",
+    "exploreTour": "REIS VERKENNEN →",
+    "customTitle": "STEL UW EIGEN REIS SAMEN",
+    "customCopy": "Vindt u niet precies wat u zoekt? Onze reisarchitecten ontwerpen een volledig op maat gemaakt reisplan, afgestemd op uw interesses en tempo.",
+    "customLink": "MAATWERK-AANVRAAG →",
+    "ctaTitle": "KLAAR VOOR AVONTUUR?",
+    "ctaButton": "OFFERTE VOOR GROEP AANVRAGEN →"
+  },
+  "journal": {
+    "kicker": "DEEL 04 / EDITORIALE SERIE",
+    "title": "REISVERHALEN",
+    "heroCopy": "Meeslepende verhalen vanaf de rand van de wereld, gecureerd voor wie het authentieke, het verborgene en het sublieme zoekt.",
+    "entriesLabel": "LAATSTE BIJDRAGEN",
+    "tabsAria": "Dagboekcategorieën",
+    "tabs": [
+      "ALLE VERHALEN",
+      "VERBORGEN JUWEELTJES",
+      "LOKALE GIDSEN",
+      "REISTIPS"
+    ],
+    "moreLink": "ONTDEK MEER VERHALEN →",
+    "subscribeTitle": "WORD LID VAN ONZE WEKELIJKSE VERZENDING",
+    "subscribeCopy": "Geen spam, alleen gecureerde reisinspiratie, geheime locaties en redactionele verhalen, elke zondagochtend in uw inbox.",
+    "emailLabel": "E-MAILADRES",
+    "emailAria": "E-mailadres",
+    "subscribeButton": "ABONNEREN",
+    "checkbox": "IK GA AKKOORD MET HET PRIVACYBELEID EN DE SERVICEVOORWAARDEN.",
+    "quote": "„REIZEN IS HET ENIGE DAT JE KOOPT EN JE RIJKER MAAKT.”",
+    "quoteFooter": "DE LOCAL EXPLORER FILOSOFIE",
+    "watermark": "LOCAL"
+  },
+  "detail": {
+    "back": "← TERUG",
+    "exploreTourCta": "DEZE REIS BOEKEN",
+    "readMoreCta": "LEES HET VOLLEDIGE VERHAAL",
+    "viewExpedition": "BEZOEK DE EXPEDITIE",
+    "highlights": "HOOGTEPUNTEN",
+    "bestTime": "BESTE REISTIJD",
+    "duration": "DUUR",
+    "groupSize": "GROEPSGROOTTE",
+    "startingFrom": "VANAF",
+    "difficulty": "MOEILIJKHEIDSGRAAD",
+    "stay": "WAAR U VERBLIJFT",
+    "stayPlaceholder": "Handgekozen boutique-verblijven, in lijn met de redactionele geest van de reis.",
+    "itinerary": "REISROUTE",
+    "stayBody": "Elk verblijf in ons netwerk is gekozen om zijn stille karakter en nabijheid tot de ervaringen die de route vormgeven. Verwacht lokaal gerunde lodges, gerestaureerde familiehuizen en designhotels waar de kamer een plek is om te rusten, niet om te verdwijnen.",
+    "philosophy": "DE EDITORIALE BLIK",
+    "philosophyBody": "We bouwden deze route voor reizigers die een reis afmeten aan de ontmoete mensen en de gewonnen stilte — niet aan de afgevinkte lijst. Het tempo is bewust, de toegang is gecureerd, en de momenten zijn voorbehouden aan wie reist om iets te voelen.",
+    "guide": "UW LOKALE GIDS",
+    "guideBody": "Een regionale expert begeleidt elke afreis. Geen reisleider — maar schrijver, fotograaf of natuuronderzoeker die het terrein al decennia kent. Hij beslist waar te blijven en wanneer te vertrekken, en vormt elke dag rond wat het landschap teruggeeft.",
+    "goodToKnow": "GOED OM TE WETEN",
+    "goodToKnowItems": [
+      "Kleine groepen tot 12 reizigers",
+      "Alle grondtransfers zijn inbegrepen",
+      "Twee lokale diners maken deel uit van het programma",
+      "Een reisverzekering wordt aanbevolen"
+    ],
+    "byline": "DOOR",
+    "keepReading": "VERDER LEZEN",
+    "tags": "TAGS",
+    "share": "DELEN",
+    "backToList": "← TERUG NAAR {{section}}",
+    "loading": "Laden…",
+    "notFound": "We konden die bijdrage niet vinden.",
+    "notFoundCta": "TERUG NAAR HOME"
+  }
+}

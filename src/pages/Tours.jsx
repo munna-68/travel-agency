@@ -1,79 +1,45 @@
+import { useTranslation } from "react-i18next";
+import { tours } from "../data/tours";
+import NavLink from "../components/NavLink";
 import styles from "./Tours.module.css";
 
-const tours = [
-  {
-    category: "CULTURAL",
-    place: "KYOTO, JAPAN",
-    title: "THE ZEN PATHWAY",
-    duration: "4 DAYS",
-    price: "$1,250",
-    image: "/img/tours-zen-pathway.svg",
-  },
-  {
-    category: "JEEP RIDE",
-    place: "GUILIN, CHINA",
-    title: "KARST FRONTIER",
-    duration: "6 DAYS",
-    price: "$2,100",
-    image: "/img/tours-karst-frontier.svg",
-  },
-  {
-    category: "HIKING",
-    place: "BANFF, CANADA",
-    title: "SUMMIT SERENITY",
-    duration: "5 DAYS",
-    price: "$1,850",
-    image: "/img/tours-summit-serenity.svg",
-  },
-  {
-    category: "GASTRONOMY",
-    place: "SANTORINI, GREECE",
-    title: "AEGEAN FLAVORS",
-    duration: "3 DAYS",
-    price: "$980",
-    image: "/img/tours-aegean-flavors.svg",
-  },
-  {
-    category: "JEEP RIDE",
-    place: "CALIFORNIA, USA",
-    title: "COASTAL HIGHWAY",
-    duration: "7 DAYS",
-    price: "$2,400",
-    image: "/img/tours-coastal-highway.svg",
-  },
-];
-
-const filters = [
-  "ALL EXPERIENCES",
-  "HIKING",
-  "CULTURAL",
-  "JEEP RIDE",
-  "GASTRONOMY",
-];
-
 export default function Tours() {
+  const { t } = useTranslation();
+  const filters = t("tours.filters", { returnObjects: true });
+  const top = tours.slice(0, 3);
+  const bottom = tours.slice(3);
+
   return (
     <main className={styles.page}>
       <section className={styles.hero}>
         <div className={styles.content}>
           <div className={styles.heroGrid}>
             <div className={styles.heroCopyBlock}>
-              <div className={styles.kicker}>SEASON 2024</div>
+              <div className={styles.kicker}>{t("tours.kicker")}</div>
               <h1 className={styles.heroTitle}>
-                <span>OUR CURATED</span>
-                <span className={styles.outline}>TOURS</span>
+                {(() => {
+                  const parts = t("tours.heroTitle", { returnObjects: true });
+                  return Array.isArray(parts) ? (
+                    parts.map((p, i) => (
+                      <span
+                        key={i}
+                        className={i === parts.length - 1 ? styles.outline : ""}
+                      >
+                        {p}
+                      </span>
+                    ))
+                  ) : (
+                    <span>{parts}</span>
+                  );
+                })()}
               </h1>
 
-              <p className={styles.heroCopy}>
-                Beyond the standard routes. We&apos;ve meticulously designed
-                each journey to immerse you in the authentic soul of every
-                destination, guided by those who call it home.
-              </p>
+              <p className={styles.heroCopy}>{t("tours.heroCopy")}</p>
             </div>
 
             <div className={styles.heroStat}>
               <strong>70+</strong>
-              <span>ACTIVE TOURS</span>
+              <span>{t("tours.statLabel")}</span>
             </div>
           </div>
         </div>
@@ -81,11 +47,13 @@ export default function Tours() {
 
       <section className={styles.filtersSection}>
         <div className={styles.content}>
-          <div className={styles.filters} aria-label="Tour filters">
-            {filters.map((filter, index) => (
+          <div className={styles.filters} aria-label={t("tours.filtersAria")}>
+            {(Array.isArray(filters) ? filters : []).map((filter, index) => (
               <button
                 key={filter}
-                className={`${styles.filterButton} ${index === 0 ? styles.filterActive : ""}`}
+                className={`${styles.filterButton} ${
+                  index === 0 ? styles.filterActive : ""
+                }`}
                 type="button"
               >
                 {filter}
@@ -98,8 +66,12 @@ export default function Tours() {
       <section className={styles.gallery}>
         <div className={styles.content}>
           <div className={styles.tourGrid}>
-            {tours.slice(0, 3).map((tour) => (
-              <article className={styles.tourCard} key={tour.title}>
+            {top.map((tour) => (
+              <NavLink
+                to={`/tours/${tour.slug}`}
+                className={styles.tourCard}
+                key={tour.slug}
+              >
                 <img className={styles.cardImage} src={tour.image} alt="" />
                 <span className={styles.cardTag}>{tour.category}</span>
                 <div className={styles.cardOverlay}>
@@ -107,26 +79,30 @@ export default function Tours() {
                   <h2 className={styles.cardTitle}>{tour.title}</h2>
                   <dl className={styles.metaRow}>
                     <div>
-                      <dt>DURATION</dt>
+                      <dt>{t("tours.duration")}</dt>
                       <dd>{tour.duration}</dd>
                     </div>
                     <div>
-                      <dt>PRICE</dt>
+                      <dt>{t("tours.price")}</dt>
                       <dd>{tour.price}</dd>
                     </div>
                   </dl>
-                  <a className={styles.cardButton} href="/destinations">
-                    EXPLORE TOUR →
-                  </a>
+                  <span className={styles.cardButton}>
+                    {t("tours.exploreTour")}
+                  </span>
                 </div>
-              </article>
+              </NavLink>
             ))}
           </div>
 
           <div className={styles.bottomGrid}>
             <div className={styles.tourGridCompact}>
-              {tours.slice(3).map((tour) => (
-                <article className={styles.tourCard} key={tour.title}>
+              {bottom.map((tour) => (
+                <NavLink
+                  to={`/tours/${tour.slug}`}
+                  className={styles.tourCard}
+                  key={tour.slug}
+                >
                   <img className={styles.cardImage} src={tour.image} alt="" />
                   <span className={styles.cardTag}>{tour.category}</span>
                   <div className={styles.cardOverlay}>
@@ -134,19 +110,19 @@ export default function Tours() {
                     <h2 className={styles.cardTitle}>{tour.title}</h2>
                     <dl className={styles.metaRow}>
                       <div>
-                        <dt>DURATION</dt>
+                        <dt>{t("tours.duration")}</dt>
                         <dd>{tour.duration}</dd>
                       </div>
                       <div>
-                        <dt>PRICE</dt>
+                        <dt>{t("tours.price")}</dt>
                         <dd>{tour.price}</dd>
                       </div>
                     </dl>
-                    <a className={styles.cardButton} href="/destinations">
-                      EXPLORE TOUR →
-                    </a>
+                    <span className={styles.cardButton}>
+                      {t("tours.exploreTour")}
+                    </span>
                   </div>
-                </article>
+                </NavLink>
               ))}
             </div>
 
@@ -154,14 +130,10 @@ export default function Tours() {
               <div className={styles.customIcon} aria-hidden="true">
                 <span />
               </div>
-              <h2 className={styles.customTitle}>CRAFT YOUR OWN JOURNEY</h2>
-              <p className={styles.customCopy}>
-                Can&apos;t find exactly what you&apos;re looking for? Our travel
-                architects can design a completely bespoke itinerary tailored to
-                your specific interests and pace.
-              </p>
+              <h2 className={styles.customTitle}>{t("tours.customTitle")}</h2>
+              <p className={styles.customCopy}>{t("tours.customCopy")}</p>
               <button className={styles.customLink} type="button">
-                START CUSTOM INQUIRY →
+                {t("tours.customLink")}
               </button>
             </aside>
           </div>
@@ -170,9 +142,9 @@ export default function Tours() {
 
       <section className={styles.ctaBand}>
         <div className={styles.content}>
-          <h2>READY FOR ADVENTURE?</h2>
+          <h2>{t("tours.ctaTitle")}</h2>
           <button type="button" className={styles.ctaButton}>
-            REQUEST GROUP QUOTE →
+            {t("tours.ctaButton")}
           </button>
         </div>
       </section>

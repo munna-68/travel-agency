@@ -1,0 +1,180 @@
+{
+  "common": {
+    "languageLabel": "Langue",
+    "openMenu": "Ouvrir le menu",
+    "explore": "Explorer",
+    "loading": "Chargement"
+  },
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "destinations": "Destinations",
+    "tours": "Voyages",
+    "journal": "Journal",
+    "brandHome": "Accueil Local Explorer"
+  },
+  "footer": {
+    "brand": "LOCAL EXPLORER",
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions d'utilisation",
+    "contact": "Nous contacter",
+    "press": "Dossier de presse"
+  },
+  "home": {
+    "heroAria": "Page d'accueil Local Explorer",
+    "heroCta": "Explorer nos itinéraires →",
+    "highlightsAria": "Points forts de l'agence",
+    "stats": {
+      "routesLabel": "ITINÉRAIRES CURATÉS",
+      "partnersLabel": "PARTENAIRES LOCAUX",
+      "toneLabel": "TONE ÉDITORIAL"
+    },
+    "highlights": {
+      "destinationsLabel": "DESTINATIONS",
+      "destinationsTitle": "Choisissez le rythme qui vous ressemble.",
+      "destinationsCopy": "Escapades en montagne, voyages lents en bord de mer et itinéraires urbains pensés par ceux qui vivent sur place.",
+      "toursLabel": "VOYAGES",
+      "toursTitle": "Des expériences guidées avec retenue éditoriale.",
+      "toursCopy": "Petits groupes, conçus autour de la texture, du timing et de l'accès, loin des listes génériques.",
+      "journalLabel": "JOURNAL",
+      "journalTitle": "Récits des lieux qui définissent la marque.",
+      "journalCopy": "Notes, reportages de terrain et observations discrètes des habitants et des paysages derrière nos itinéraires.",
+      "enter": "ENTRER →"
+    },
+    "band": {
+      "kicker": "COMMENCEZ ICI",
+      "title": "Voyager qui se lit, qui s'écrit — jamais assemblé à la hâte.",
+      "action": "LIRE LE JOURNAL →"
+    }
+  },
+  "about": {
+    "heroTitle": ["AU-DELÀ", "DE LA CARTE"],
+    "heroCopy": "Depuis 2014, nous concevons des voyages qui dépassent le tourisme classique. Les plus belles histoires ne se trouvent pas dans les guides, mais dans les coins discrets du monde, partagés par celles et ceux qui l'habitent.",
+    "philosophyTitle": "NOTRE PHILOSOPHIE",
+    "philosophyBody1": "Nous ne vendons pas de voyages ; nous créons des liens. Local Explorer est né d'une idée simple : le voyage devrait être un échange réciproque de culture, de respect et d'émerveillement.",
+    "philosophyBody2": "Chaque destination de notre catalogue est validée personnellement par notre équipe. Nous passons des semaines sur le terrain, à sélectionner des partenaires, à goûter des cuisines et à repérer les sentiers qui n'apparaissent sur aucune carte numérique.",
+    "values": [
+      "100% GUIDES LOCAUX",
+      "EMPREINTE CARBONE NEUTRE",
+      "PROJETS DE PRÉSERVATION CULTURELLE"
+    ],
+    "statsAria": "Statistiques Local Explorer",
+    "stats": {
+      "years": "ANNÉES D'EXPLORATION",
+      "countries": "PAYS",
+      "memories": "SOUVENIRS CRÉÉS",
+      "impact": "IMPACT LOCAL"
+    },
+    "curatorsTitle": "LES CURATEURS",
+    "curatorsIntro": "Une collective de photographes, d'écrivains et d'explorateurs unis par une même obsession : la découverte.",
+    "curatorRoles": {
+      "founder": "FONDATEUR & CEO",
+      "content": "DIRECTRICE DE CONTENU",
+      "expedition": "CHEF D'EXPÉDITION",
+      "ops": "DIRECTRICE DES OPÉRATIONS"
+    },
+    "storyTitle": "COMMENCEZ VOTRE HISTOIRE",
+    "storyAction": "EXPLORER LES VOYAGES →"
+  },
+  "destinations": {
+    "heroTitle": "OÙ ALLEZ-VOUS ENSUITE ?",
+    "heroCopy": "Échappez à l'ordinaire avec notre sélection de retraites à travers le monde. Des pics brumeux de Guilin aux temples sereins de Kyoto, redécouvrez l'art de l'errance.",
+    "statsAria": "Statistiques des destinations",
+    "stats": {
+      "tours": "VOYAGES CURATÉS",
+      "hubs": "PLATEFORMES MONDIALES",
+      "support": "ASSISTANCE LOCALE"
+    },
+    "viewExpedition": "VOIR L'EXPÉDITION →",
+    "revealKicker": "RÉVÉLATION EXCLUSIVE",
+    "revealCopy": "Vivez la caldeira sans la foule. Notre nouveau journal nocturne explore la vie secrète des Cyclades sous la lumière de la lune.",
+    "revealDate": "DISPONIBLE À L'AUTOMNE '24",
+    "newsletterTitle": "LE JOURNAL HEBDOMADAIRE",
+    "newsletterCopy": "Rejoignez plus de 50 000 explorateurs et recevez des récits de voyage sélectionnés, des guides de lieux secrets et un accès anticipé à nos nouveaux voyages.",
+    "emailPlaceholder": "VOTRE ADRESSE E-MAIL",
+    "emailAria": "Adresse e-mail",
+    "subscribe": "S'ABONNER",
+    "quote": "« VOYAGER EST LA SEULE CHOSE QUE L'ON ACHÈTE QUI NOUS REND PLUS RICHE. »",
+    "quoteFooter": "— EXPLORATEUR ANONYME"
+  },
+  "tours": {
+    "kicker": "SAISON 2024",
+    "heroTitle": ["NOS VOYAGES", "CURATÉS"],
+    "heroCopy": "Au-delà des itinéraires standards. Nous avons conçu chaque voyage pour vous immerger dans l'âme authentique de chaque destination, guidé par celles et ceux qui l'habitent.",
+    "statLabel": "VOYAGES ACTIFS",
+    "filtersAria": "Filtres des voyages",
+    "filters": [
+      "TOUTES LES EXPÉRIENCES",
+      "RANDONNÉE",
+      "CULTUREL",
+      "JEEP",
+      "GASTRONOMIE"
+    ],
+    "duration": "DURÉE",
+    "price": "PRIX",
+    "exploreTour": "EXPLORER LE VOYAGE →",
+    "customTitle": "CONFECTIONNEZ VOTRE VOYAGE",
+    "customCopy": "Vous ne trouvez pas exactement ce que vous cherchez ? Nos architectes de voyage peuvent concevoir un itinéraire sur mesure, adapté à vos centres d'intérêt et à votre rythme.",
+    "customLink": "DEMANDE PERSONNALISÉE →",
+    "ctaTitle": "PRÊT POUR L'AVENTURE ?",
+    "ctaButton": "DEMANDER UN DEVIS GROUPE →"
+  },
+  "journal": {
+    "kicker": "VOLUME 04 / SÉRIE ÉDITORIALE",
+    "title": "RÉCITS DE VOYAGE",
+    "heroCopy": "Histoires immersives venues du bout du monde, sélectionnées pour celles et ceux qui cherchent l'authentique, le caché et le sublime.",
+    "entriesLabel": "DERNIÈRES PUBLICATIONS",
+    "tabsAria": "Catégories du journal",
+    "tabs": [
+      "TOUTES LES HISTOIRES",
+      "TRÉSORS CACHÉS",
+      "GUIDES LOCAUX",
+      "CONSEILS DE VOYAGE"
+    ],
+    "moreLink": "DÉCOUVRIR PLUS D'HISTOIRES →",
+    "subscribeTitle": "REJOIGNEZ NOTRE ENVOI HEBDOMADAIRE",
+    "subscribeCopy": "Pas de spam, seulement l'inspiration de voyage, des lieux confidentiels et des récits éditoriaux livrés chaque dimanche matin dans votre boîte mail.",
+    "emailLabel": "ADRESSE E-MAIL",
+    "emailAria": "Adresse e-mail",
+    "subscribeButton": "S'ABONNER",
+    "checkbox": "J'ACCEPTE LA POLITIQUE DE CONFIDENTIALITÉ ET LES CONDITIONS D'UTILISATION.",
+    "quote": "« VOYAGER EST LA SEULE CHOSE QUE L'ON ACHÈTE QUI NOUS REND PLUS RICHE. »",
+    "quoteFooter": "LA PHILOSOPHIE LOCAL EXPLORER",
+    "watermark": "LOCAL"
+  },
+  "detail": {
+    "back": "← RETOUR",
+    "exploreTourCta": "RÉSERVER CE VOYAGE",
+    "readMoreCta": "LIRE L'HISTOIRE COMPLÈTE",
+    "viewExpedition": "VOIR L'EXPÉDITION",
+    "highlights": "POINTS FORTS",
+    "bestTime": "MEILLEURE SAISON",
+    "duration": "DURÉE",
+    "groupSize": "TAILLE DU GROUPE",
+    "startingFrom": "À PARTIR DE",
+    "difficulty": "DIFFICULTÉ",
+    "stay": "OÙ VOUS LOGEREZ",
+    "stayPlaceholder": "Hébergements boutique sélectionnés, en accord avec l'esprit éditorial du voyage.",
+    "itinerary": "ITINÉRAIRE",
+    "stayBody": "Chaque adresse de notre réseau est choisie pour son caractère discret et sa proximité avec les expériences qui jalonnent l'itinéraire. Attendez-vous à des lodges tenus par des locaux, des maisons de famille restaurées et des hôtels au design soigné où la chambre est un lieu pour se reposer, pas pour s'effacer.",
+    "philosophy": "LE REGARD ÉDITORIAL",
+    "philosophyBody": "Nous avons conçu cet itinéraire pour des voyageurs qui mesurent un voyage aux personnes rencontrées et au silence gagné — non à la liste de cases cochées. Le rythme est délibéré, l'accès est sélectionné, et les moments sont réservés à celles et ceux qui voyagent pour ressentir quelque chose.",
+    "guide": "VOTRE GUIDE LOCAL",
+    "guideBody": "Un expert régional accompagne chaque départ. Ce n'est pas un accompagnateur — c'est un écrivain, un photographe ou un naturaliste qui connaît le terrain depuis des décennies. Il décide où s'attarder et quand repartir, et modèle chaque journée autour de ce que le paysage rend.",
+    "goodToKnow": "À SAVOIR",
+    "goodToKnowItems": [
+      "Petits groupes jusqu'à 12 voyageurs",
+      "Tous les transferts terrestres sont inclus",
+      "Deux dîners locaux sont au programme",
+      "Une assurance voyage est recommandée"
+    ],
+    "byline": "PAR",
+    "keepReading": "CONTINUER LA LECTURE",
+    "tags": "MOTS-CLÉS",
+    "share": "PARTAGER",
+    "backToList": "← RETOUR VERS {{section}}",
+    "loading": "Chargement…",
+    "notFound": "Nous n'avons pas trouvé cet article.",
+    "notFoundCta": "RETOUR À L'ACCUEIL"
+  }
+}

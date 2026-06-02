@@ -90,6 +90,11 @@
 .tabs a {
   color: var(--on-surface);
   opacity: 0.72;
+  transition: opacity 220ms ease;
+}
+
+.tabs a:hover {
+  opacity: 1;
 }
 
 .activeTab {
@@ -114,6 +119,19 @@
   flex-direction: column;
 }
 
+.featuredStory,
+.sideStory,
+.storyCard {
+  cursor: pointer;
+  transition: transform 280ms ease;
+}
+
+.featuredStory:hover,
+.sideStory:hover,
+.storyCard:hover {
+  transform: translateY(-2px);
+}
+
 .featuredImageWrap {
   position: relative;
 }
@@ -125,6 +143,13 @@
   width: 100%;
   object-fit: cover;
   background: var(--surface-container-highest);
+  transition: transform 600ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.featuredStory:hover .featuredImageWrap img,
+.sideStory:hover img,
+.storyCard:hover .squareImageWrap img {
+  transform: scale(1.04);
 }
 
 .featuredImageWrap img {
@@ -237,6 +262,13 @@
 
 .moreLink {
   color: var(--on-surface);
+  transition: transform 220ms ease, opacity 220ms ease;
+}
+
+.moreLink:hover {
+  transform: translateX(3px);
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 .subscribe {
@@ -290,6 +322,14 @@
   border: 0;
   color: var(--on-primary);
   padding: 0;
+  cursor: pointer;
+  transition: opacity 220ms ease;
+}
+
+.formHead button:hover {
+  opacity: 0.78;
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 .subscribeFormBlock input[type="email"] {
@@ -300,6 +340,13 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.72);
   min-height: 38px;
   color: var(--on-primary);
+  transition: border-color 220ms ease;
+}
+
+.subscribeFormBlock input[type="email"]:hover,
+.subscribeFormBlock input[type="email"]:focus {
+  border-bottom-color: var(--on-primary);
+  outline: none;
 }
 
 .checkboxLabel {

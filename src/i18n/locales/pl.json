@@ -1,0 +1,180 @@
+{
+  "common": {
+    "languageLabel": "Język",
+    "openMenu": "Otwórz menu",
+    "explore": "Odkrywaj",
+    "loading": "Ładowanie"
+  },
+  "nav": {
+    "home": "Strona główna",
+    "about": "O nas",
+    "destinations": "Kierunki",
+    "tours": "Podróże",
+    "journal": "Dziennik",
+    "brandHome": "Strona główna Local Explorer"
+  },
+  "footer": {
+    "brand": "LOCAL EXPLORER",
+    "privacy": "Polityka prywatności",
+    "terms": "Warunki korzystania",
+    "contact": "Skontaktuj się",
+    "press": "Pakiet prasowy"
+  },
+  "home": {
+    "heroAria": "Strona startowa Local Explorer",
+    "heroCta": "Odkryj nasze trasy →",
+    "highlightsAria": "Wyróżnienia agencji",
+    "stats": {
+      "routesLabel": "TRASY KURATOROWANE",
+      "partnersLabel": "LOKALNI PARTNERZY",
+      "toneLabel": "TON EDYTORSKI"
+    },
+    "highlights": {
+      "destinationsLabel": "KIERUNKI",
+      "destinationsTitle": "Wybierz tempo, które do Ciebie pasuje.",
+      "destinationsCopy": "Ucieczki w góry, powolne podróże wzdłuż wybrzeży i miejskie trasy tworzone przez tych, którzy tu mieszkają.",
+      "toursLabel": "PODRÓŻE",
+      "toursTitle": "Prowadzone doświadczenia z edytorską powściągliwością.",
+      "toursCopy": "Małe grupy, projektowane wokół faktury, czasu i dostępu — nie generycznych list.",
+      "journalLabel": "DZIENNIK",
+      "journalTitle": "Historie z miejsc, które kształtują markę.",
+      "journalCopy": "Notatki, reportaże z trasy i ciche obserwacje ludzi oraz krajobrazów stojących za naszymi trasami.",
+      "enter": "WEJDŹ →"
+    },
+    "band": {
+      "kicker": "ZACZNIJ TUTAJ",
+      "title": "Podróże, które się czyta, które się pisze — nigdy pospiesznie złożone.",
+      "action": "CZYTAJ DZIENNIK →"
+    }
+  },
+  "about": {
+    "heroTitle": ["POZA", "MAPĘ"],
+    "heroCopy": "Od 2014 roku tworzymy podróże, które wychodzą poza tradycyjną turystykę. Najlepsze historie nie kryją się w przewodnikach, lecz w cichych zakątkach świata, dzielonych z tymi, którzy go zamieszkują.",
+    "philosophyTitle": "NASZA FILOZOFIA",
+    "philosophyBody1": "Nie sprzedajemy podróży, tworzymy więzi. Local Explorer narodziło się z prostej idei: podróżowanie powinno być wzajemną wymianą kultury, szacunku i zachwytu.",
+    "philosophyBody2": "Każdy kierunek w naszym katalogu jest osobiście weryfikowany przez zespół. Spędzamy tygodnie w terenie, dobierając partnerów, testując kuchnie i odnajdując szlaki, których nie ma na żadnej cyfrowej mapie.",
+    "values": [
+      "100% LOKALNYCH PRZEWODNIKÓW",
+      "NEUTRALNY ŚLAD WĘGLOWY",
+      "PROJEKTY OCHRONY KULTURY"
+    ],
+    "statsAria": "Statystyki Local Explorer",
+    "stats": {
+      "years": "LAT ODKRYWANIA",
+      "countries": "KRAJE",
+      "memories": "WSPOMNIENIA",
+      "impact": "LOKALNY WPŁYW"
+    },
+    "curatorsTitle": "KURATORZY",
+    "curatorsIntro": "Kolektyw fotografów, pisarzy i odkrywców połączonych jedną obsesją: odkrywaniem.",
+    "curatorRoles": {
+      "founder": "ZAŁOŻYCIEL & CEO",
+      "content": "DYREKTORKA TREŚCI",
+      "expedition": "LIDER EKSPEDYCJI",
+      "ops": "DYREKTORKA OPERACYJNA"
+    },
+    "storyTitle": "ZACZNIJ SWOJĄ HISTORIĘ",
+    "storyAction": "ODKRYJ PODRÓŻE →"
+  },
+  "destinations": {
+    "heroTitle": "DOKĄD TERAZ?",
+    "heroCopy": "Ucieknij od rutyny dzięki naszej selekcji miejsc na całym świecie. Od mglistych szczytów Guilin po spokojne świątynie Kioto — odkryj na nowo sztukę wędrowania.",
+    "statsAria": "Statystyki kierunków",
+    "stats": {
+      "tours": "KURATOROWANE PODRÓŻE",
+      "hubs": "GLOBALNE BAZY",
+      "support": "LOKALNE WSPARCIE"
+    },
+    "viewExpedition": "ZOBACZ EKSPEDYCJĘ →",
+    "revealKicker": "EKSKLUZYWNA ZAPOWIEDŹ",
+    "revealCopy": "Doświadcz kaldery bez tłumów. Nasz nowy nocny dziennik zgłębia sekretne życie Cyklad w świetle księżyca.",
+    "revealDate": "JESIENIĄ '24",
+    "newsletterTitle": "TYGODNIOWY DZIENNIK",
+    "newsletterCopy": "Dołącz do ponad 50 000 odkrywców i otrzymuj kuratorowane historie podróży, przewodniki po ukrytych miejscach oraz wczesny dostęp do nowych podróży.",
+    "emailPlaceholder": "TWÓJ ADRES E-MAIL",
+    "emailAria": "Adres e-mail",
+    "subscribe": "ZAPISZ SIĘ",
+    "quote": "„PODRÓŻOWANIE JEST JEDYNĄ RZECZĄ, KTÓRĄ KUPUJESZ, A KTÓRA CZYNI CIĘ BOGATSZYM.”",
+    "quoteFooter": "— ANONIMOWY ODKRYWCA"
+  },
+  "tours": {
+    "kicker": "SEZON 2024",
+    "heroTitle": ["NASZE KURATOROWANE", "PODRÓŻE"],
+    "heroCopy": "Poza standardowymi trasami. Starannie zaprojektowaliśmy każdą podróż, by zanurzyć Cię w autentycznej duszy każdego miejsca, prowadzonego przez tych, którzy nazywają je domem.",
+    "statLabel": "AKTYWNE PODRÓŻE",
+    "filtersAria": "Filtry podróży",
+    "filters": [
+      "WSZYSTKIE DOŚWIADCZENIA",
+      "WĘDRÓWKI",
+      "KULTUROWE",
+      "JEEP",
+      "GASTRONOMIA"
+    ],
+    "duration": "CZAS TRWANIA",
+    "price": "CENA",
+    "exploreTour": "ODKRYJ PODRÓŻ →",
+    "customTitle": "STWÓRZ WŁASNĄ PODRÓŻ",
+    "customCopy": "Nie możesz znaleźć dokładnie tego, czego szukasz? Nasi architekci podróży zaprojektują w pełni spersonalizowany plan, dopasowany do Twoich zainteresowań i tempa.",
+    "customLink": "ZAPYTANIE INDYWIDUALNE →",
+    "ctaTitle": "GOTOWY NA PRZYGODĘ?",
+    "ctaButton": "WYCENA DLA GRUPY →"
+  },
+  "journal": {
+    "kicker": "TOM 04 / SERIA EDYTORSKA",
+    "title": "PODRÓŻNICZE OPOWIADANIA",
+    "heroCopy": "Wciągające historie z krańców świata, kuratorowane dla tych, którzy szukają autentycznego, ukrytego i wzniosłego.",
+    "entriesLabel": "OSTATNIE WPISY",
+    "tabsAria": "Kategorie dziennika",
+    "tabs": [
+      "WSZYSTKIE HISTORIE",
+      "UKRYTE SKARBY",
+      "LOKALNI PRZEWODNICY",
+      "PORADY PODRÓŻNICZE"
+    ],
+    "moreLink": "ODKRYJ WIĘCEJ HISTORII →",
+    "subscribeTitle": "DOŁĄCZ DO NASZEJ TYGODNIOWEJ WYSYŁKI",
+    "subscribeCopy": "Bez spamu — tylko kuratorowana inspiracja podróżnicza, lokalizacje z pierwszej ręki i edytorskie opowieści, dostarczane do Twojej skrzynki w każdą niedzielę rano.",
+    "emailLabel": "ADRES E-MAIL",
+    "emailAria": "Adres e-mail",
+    "subscribeButton": "ZAPISZ SIĘ",
+    "checkbox": "AKCEPTUJĘ POLITYKĘ PRYWATNOŚCI I WARUNKI KORZYSTANIA.",
+    "quote": "„PODRÓŻOWANIE JEST JEDYNĄ RZECZĄ, KTÓRĄ KUPUJESZ, A KTÓRA CZYNI CIĘ BOGATSZYM.”",
+    "quoteFooter": "FILOZOFIA LOCAL EXPLORER",
+    "watermark": "LOCAL"
+  },
+  "detail": {
+    "back": "← WSTECZ",
+    "exploreTourCta": "ZAREZERWUJ TĘ PODRÓŻ",
+    "readMoreCta": "PRZECZYTAJ CAŁOŚĆ",
+    "viewExpedition": "ZOBACZ EKSPEDYCJĘ",
+    "highlights": "NAJWAŻNIEJSZE",
+    "bestTime": "NAJLEPSZY OKRES",
+    "duration": "CZAS TRWANIA",
+    "groupSize": "WIELKOŚĆ GRUPY",
+    "startingFrom": "OD",
+    "difficulty": "TRUDNOŚĆ",
+    "stay": "GDZIE SIĘ ZATRZYMASZ",
+    "stayPlaceholder": "Starannie wybrane butikowe noclegi, w zgodzie z edytorskim duchem podróży.",
+    "itinerary": "PLAN PODRÓŻY",
+    "stayBody": "Każdy obiekt w naszej sieci wybrano za jego cichy charakter i bliskość do doświadczeń kształtujących trasę. Spodziewaj się prowadzonych lokalnie lodge'ów, odrestaurowanych domów z duszą i hoteli z designem, w których pokój jest miejscem odpoczynku, a nie ucieczki.",
+    "philosophy": "EDYTORSKIE SPOJRZENIE",
+    "philosophyBody": "Stworzyliśmy tę trasę dla podróżników, którzy mierzą podróż spotkanymi ludźmi i zdobytymi chwilami ciszy — nie odhaczonymi punktami. Tempo jest przemyślane, dostęp jest kuratorowany, a chwile zarezerwowane dla tych, którzy podróżują, by coś poczuć.",
+    "guide": "TWÓJ LOKALNY PRZEWODNIK",
+    "guideBody": "Regionalny ekspert towarzyszy każdemu wyjazdowi. Nie jest pilotem — jest pisarzem, fotografem lub przyrodnikiem, który zna teren od dekad. Decyduje, gdzie się zatrzymać, a kiedy ruszyć dalej, i kształtuje każdy dzień wokół tego, co oddaje krajobraz.",
+    "goodToKnow": "WARTO WIEDZIEĆ",
+    "goodToKnowItems": [
+      "Małe grupy do 12 podróżników",
+      "Wszystkie transfery lądowe są wliczone",
+      "Dwie lokalne kolacje są częścią programu",
+      "Zalecamy ubezpieczenie podróżne"
+    ],
+    "byline": "AUTOR",
+    "keepReading": "CZYTAJ DALEJ",
+    "tags": "TAGI",
+    "share": "UDOSTĘPNIJ",
+    "backToList": "← WRÓĆ DO {{section}}",
+    "loading": "Ładowanie…",
+    "notFound": "Nie znaleźliśmy tego wpisu.",
+    "notFoundCta": "WRÓĆ NA STRONĘ GŁÓWNĄ"
+  }
+}

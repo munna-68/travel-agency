@@ -129,7 +129,11 @@
   opacity: 0.72;
   position: relative;
   padding-bottom: 4px;
-  transition: opacity 180ms ease;
+  transition: opacity 220ms ease;
+}
+
+.link:hover {
+  opacity: 1;
 }
 
 .active {
@@ -164,7 +168,14 @@
   font-weight: var(--label-caps-font-weight);
   letter-spacing: var(--label-caps-letter-spacing);
   text-transform: uppercase;
-  transition: background-color 180ms ease, border-color 180ms ease;
+  cursor: pointer;
+  transition: background-color 220ms ease, border-color 220ms ease, color 220ms ease;
+}
+
+.pill:hover {
+  background: var(--on-background);
+  color: var(--on-primary);
+  border-color: var(--on-background);
 }
 
 .menu {
@@ -174,11 +185,17 @@
   border-radius: var(--radius-full);
   background: var(--surface-container-lowest);
   padding: 0 10px;
-  display: grid;
+  display: none;
   align-content: center;
   gap: 5px;
   cursor: pointer;
-  transition: background-color 180ms ease, border-color 180ms ease;
+  transition: background-color 220ms ease, border-color 220ms ease;
+}
+
+.menu:hover {
+  background: var(--on-background);
+  border-color: var(--on-background);
+  color: var(--on-primary);
 }
 
 .menu span {
@@ -209,6 +226,10 @@
 
   .actions {
     justify-self: end;
+  }
+
+  .menu {
+    display: grid;
   }
 }
 

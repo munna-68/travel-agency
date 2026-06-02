@@ -1,16 +1,19 @@
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 import NavLink from "./NavLink";
+import LanguageSwitcher from "./LanguageSwitcher";
 import styles from "./Navbar.module.css";
 
-const links = [
-  { to: "/", label: "Home", end: true },
-  { to: "/about", label: "About" },
-  { to: "/destinations", label: "Destinations" },
-  { to: "/tours", label: "Tours" },
-  { to: "/journal", label: "Journal" },
+const linkKeys = [
+  { to: "/", labelKey: "nav.home", end: true },
+  { to: "/about", labelKey: "nav.about" },
+  { to: "/destinations", labelKey: "nav.destinations" },
+  { to: "/tours", labelKey: "nav.tours" },
+  { to: "/journal", labelKey: "nav.journal" },
 ];
 
 export default function Navbar({ theme = "light" }) {
+  const { t } = useTranslation();
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -29,15 +32,15 @@ export default function Navbar({ theme = "light" }) {
         <NavLink
           to="/"
           className={styles.brand}
-          aria-label="Local Explorer home"
+          aria-label={t("nav.brandHome")}
         >
           LOCAL
           <br />
           EXPLORER
         </NavLink>
 
-        <nav className={styles.nav} aria-label="Primary">
-          {links.map((link) => (
+        <nav className={styles.nav} aria-label={t("common.languageLabel")}>
+          {linkKeys.map((link) => (
             <NavLink
               key={link.to}
               to={link.to}
@@ -46,16 +49,18 @@ export default function Navbar({ theme = "light" }) {
                 `${styles.link} ${isActive ? styles.active : ""}`
               }
             >
-              {link.label}
+              {t(link.labelKey)}
             </NavLink>
           ))}
         </nav>
 
         <div className={styles.actions}>
-          <button className={styles.pill} type="button">
-            LANGUAGE
-          </button>
-          <button className={styles.menu} type="button" aria-label="Open menu">
+          <LanguageSwitcher />
+          <button
+            className={styles.menu}
+            type="button"
+            aria-label={t("common.openMenu")}
+          >
             <span />
             <span />
           </button>

@@ -1,8 +1,14 @@
+import { useTranslation } from "react-i18next";
+import { articles } from "../data/articles";
+import NavLink from "../components/NavLink";
 import styles from "./Journal.module.css";
 
-const tabs = ["ALL STORIES", "HIDDEN GEMS", "LOCAL GUIDES", "TRAVEL TIPS"];
-
 export default function Journal() {
+  const { t } = useTranslation();
+  const tabs = t("journal.tabs", { returnObjects: true });
+  const [featured, side, ...rest] = articles;
+  const [story1, story2] = rest;
+
   return (
     <main className={styles.page}>
       <section className={styles.hero}>
@@ -12,21 +18,18 @@ export default function Journal() {
           alt=""
         />
         <div className={styles.heroCopy}>
-          <p className={styles.heroKicker}>VOLUME 04 / EDITORIAL SERIES</p>
-          <h1>TRAVEL TALES</h1>
-          <p>
-            Immersive stories from the edge of the world, curated for those who
-            seek the authentic, the hidden, and the sublime.
-          </p>
+          <p className={styles.heroKicker}>{t("journal.kicker")}</p>
+          <h1>{t("journal.title")}</h1>
+          <p>{t("journal.heroCopy")}</p>
         </div>
       </section>
 
       <section className={styles.entries}>
         <div className={styles.content}>
           <div className={styles.entryHeader}>
-            <div className={styles.sectionLabel}>LATEST ENTRIES</div>
-            <nav className={styles.tabs} aria-label="Journal categories">
-              {tabs.map((tab, index) => (
+            <div className={styles.sectionLabel}>{t("journal.entriesLabel")}</div>
+            <nav className={styles.tabs} aria-label={t("journal.tabsAria")}>
+              {(Array.isArray(tabs) ? tabs : []).map((tab, index) => (
                 <a
                   key={tab}
                   href="/journal"
@@ -39,60 +42,65 @@ export default function Journal() {
           </div>
 
           <div className={styles.topGrid}>
-            <article className={styles.featuredStory}>
+            <NavLink
+              to={`/journal/${featured.slug}`}
+              className={styles.featuredStory}
+            >
               <div className={styles.featuredImageWrap}>
-                <span className={styles.tag}>KYOTO, JAPAN</span>
-                <img src="/img/journal-kyoto-story.svg" alt="" />
+                <span className={styles.tag}>{featured.tag}</span>
+                <img src={featured.image} alt="" />
               </div>
               <div className={styles.storyMeta}>
-                NOV 12, 2024 — BY ELENA VANCE
+                {featured.date} — {t("detail.byline")} {featured.author}
               </div>
-              <h2 className={styles.storyTitle}>
-                THE SILENCE OF HIGASHIYAMA: FINDING PEACE IN KYOTO&apos;S OLD
-                SOUL
-              </h2>
-              <p className={styles.storyCopy}>
-                Beyond the bustling markets and neon lights of central Kyoto
-                lies a district frozen in time. Discover the winding stone paths
-                and hidden tea houses where silence is the primary language.
-              </p>
-            </article>
+              <h2 className={styles.storyTitle}>{featured.title}</h2>
+              <p className={styles.storyCopy}>{featured.excerpt}</p>
+            </NavLink>
 
-            <article className={styles.sideStory}>
-              <img src="/img/journal-paris-cafe.svg" alt="" />
-              <div className={styles.sideKicker}>TRAVEL TIPS</div>
-              <h2>7 CAFES IN PARIS THAT TOURISTS ALWAYS MISS</h2>
+            <NavLink
+              to={`/journal/${side.slug}`}
+              className={styles.sideStory}
+            >
+              <img src={side.image} alt="" />
+              <div className={styles.sideKicker}>{side.tag}</div>
+              <h2>{side.title}</h2>
               <span className={styles.smallRule} />
-            </article>
+            </NavLink>
           </div>
 
           <div className={styles.bottomGrid}>
-            <article className={styles.storyCard}>
+            <NavLink
+              to={`/journal/${story1.slug}`}
+              className={styles.storyCard}
+            >
               <div className={styles.squareImageWrap}>
-                <img src="/img/journal-canadian-rockies.svg" alt="" />
+                <img src={story1.image} alt="" />
               </div>
-              <div className={styles.sideKicker}>ADVENTURE</div>
-              <h3>WILD PEAKS: A GUIDE TO SOLO TREKKING THE CANADIAN ROCKIES</h3>
-            </article>
+              <div className={styles.sideKicker}>{story1.tag}</div>
+              <h3>{story1.title}</h3>
+            </NavLink>
 
             <blockquote className={styles.quoteCard}>
               <div className={styles.quoteMark}>99</div>
-              <p>“TRAVEL IS THE ONLY THING YOU BUY THAT MAKES YOU RICHER.”</p>
-              <footer>THE LOCAL EXPLORER PHILOSOPHY</footer>
+              <p>{t("journal.quote")}</p>
+              <footer>{t("journal.quoteFooter")}</footer>
             </blockquote>
 
-            <article className={styles.storyCard}>
+            <NavLink
+              to={`/journal/${story2.slug}`}
+              className={styles.storyCard}
+            >
               <div className={styles.squareImageWrap}>
-                <img src="/img/journal-santorini-domes.svg" alt="" />
+                <img src={story2.image} alt="" />
               </div>
-              <div className={styles.sideKicker}>LOCAL GUIDES</div>
-              <h3>BEYOND THE BLUE DOMES: OIA&apos;S SECRET ALLEYWAYS</h3>
-            </article>
+              <div className={styles.sideKicker}>{story2.tag}</div>
+              <h3>{story2.title}</h3>
+            </NavLink>
           </div>
 
           <div className={styles.moreLinkWrap}>
             <a className={styles.moreLink} href="/journal">
-              DISCOVER MORE STORIES →
+              {t("journal.moreLink")}
             </a>
           </div>
         </div>
@@ -102,33 +110,27 @@ export default function Journal() {
         <div className={styles.content}>
           <div className={styles.subscribeGrid}>
             <div className={styles.subscribeCopy}>
-              <h2>JOIN OUR WEEKLY DISPATCH</h2>
-              <p>
-                No spam, just curated travel inspiration, hidden location drops,
-                and editorial tales delivered straight to your inbox every
-                Sunday morning.
-              </p>
+              <h2>{t("journal.subscribeTitle")}</h2>
+              <p>{t("journal.subscribeCopy")}</p>
             </div>
 
             <div className={styles.subscribeFormBlock}>
               <div className={styles.formHead}>
-                <label htmlFor="journal-email">EMAIL ADDRESS</label>
-                <button type="button">SUBSCRIBE</button>
+                <label htmlFor="journal-email">
+                  {t("journal.emailLabel")}
+                </label>
+                <button type="button">{t("journal.subscribeButton")}</button>
               </div>
-              <input
-                id="journal-email"
-                type="email"
-                aria-label="Email address"
-              />
+              <input id="journal-email" type="email" aria-label={t("journal.emailAria")} />
               <label className={styles.checkboxLabel}>
                 <input type="checkbox" />
-                <span>I AGREE TO THE PRIVACY POLICY AND TERMS OF SERVICE.</span>
+                <span>{t("journal.checkbox")}</span>
               </label>
             </div>
           </div>
 
           <div className={styles.watermark} aria-hidden="true">
-            LOCAL
+            {t("journal.watermark")}
           </div>
         </div>
       </section>

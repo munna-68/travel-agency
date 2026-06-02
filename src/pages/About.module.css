@@ -201,6 +201,12 @@
   background: var(--surface-container-lowest);
   border-radius: 0.6rem;
   padding: 14px 14px 16px;
+  transition: transform 220ms ease, box-shadow 220ms ease;
+}
+
+.curatorCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 28px -16px rgba(28, 27, 27, 0.22);
 }
 
 .curatorImage {
@@ -272,6 +278,13 @@
   line-height: var(--label-caps-line-height);
   font-weight: var(--label-caps-font-weight);
   letter-spacing: var(--label-caps-letter-spacing);
+  transition: background-color 220ms ease, color 220ms ease, transform 220ms ease;
+}
+
+.storyButton:hover {
+  background: var(--on-surface);
+  color: var(--on-primary);
+  transform: translateY(-1px);
 }
 
 @media (max-width: 1100px) {

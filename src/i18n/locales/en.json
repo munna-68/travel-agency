@@ -1,0 +1,181 @@
+{
+  "common": {
+    "languageLabel": "Language",
+    "openMenu": "Open menu",
+    "explore": "Explore",
+    "loading": "Loading"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "destinations": "Destinations",
+    "tours": "Tours",
+    "journal": "Journal",
+    "brandHome": "Local Explorer home"
+  },
+  "footer": {
+    "brand": "LOCAL EXPLORER",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "contact": "Contact Us",
+    "press": "Press Kit"
+  },
+  "home": {
+    "heroAria": "Local Explorer landing hero",
+    "heroCta": "Explore our routes →",
+    "highlightsAria": "Agency highlights",
+    "stats": {
+      "routesLabel": "ROUTES CURATED",
+      "partnersLabel": "LOCAL PARTNERSHIPS",
+      "toneLabel": "EDITORIAL TONE"
+    },
+    "highlights": {
+      "destinationsLabel": "DESTINATIONS",
+      "destinationsTitle": "Choose the route that matches your pace.",
+      "destinationsCopy": "Mountain escapes, coastal slow travel, and city-forward itineraries shaped by local knowledge.",
+      "toursLabel": "TOURS",
+      "toursTitle": "Guided experiences with editorial restraint.",
+      "toursCopy": "Small-group journeys designed around texture, timing, and access instead of generic checklists.",
+      "journalLabel": "JOURNAL",
+      "journalTitle": "Stories from the places that shape the brand.",
+      "journalCopy": "Notes, field dispatches, and quiet observations from the people and landscapes behind the routes.",
+      "enter": "ENTER →"
+    },
+    "band": {
+      "kicker": "START HERE",
+      "title": "Travel that feels edited, not assembled.",
+      "action": "READ THE JOURNAL →"
+    }
+  },
+  "about": {
+    "heroTitle": ["BEYOND", "THE MAP"],
+    "heroCopy": "Since 2014, we've been curating journeys that transcend traditional tourism. We believe the best stories aren't found in guidebooks, but in the quiet corners of the world shared by those who call it home.",
+    "philosophyTitle": "OUR PHILOSOPHY",
+    "philosophyBody1": "We don't just sell trips; we foster connections. Local Explorer was founded on the radical idea that travel should be a two-way exchange of culture, respect, and wonder.",
+    "philosophyBody2": "Every destination in our portfolio is vetted by our team personally. We spend weeks on the ground, vetting partners, tasting menus, and finding the hidden trailheads that aren't marked on any digital map.",
+    "values": [
+      "100% LOCAL GUIDES",
+      "CARBON NEUTRAL FOOTPRINT",
+      "CULTURAL PRESERVATION PROJECTS"
+    ],
+    "statsAria": "Local Explorer stats",
+    "stats": {
+      "years": "YEARS EXPLORING",
+      "countries": "COUNTRIES",
+      "memories": "MEMORIES MADE",
+      "impact": "LOCAL IMPACT"
+    },
+    "curatorsTitle": "THE CURATORS",
+    "curatorsIntro": "A collective of photographers, writers, and explorers united by a single obsession: discovery.",
+    "curatorRoles": {
+      "founder": "FOUNDER & CEO",
+      "content": "HEAD OF CONTENT",
+      "expedition": "LEAD EXPEDITIONIST",
+      "ops": "OPERATIONS DIRECTOR"
+    },
+    "storyTitle": "START YOUR STORY",
+    "storyAction": "EXPLORE TOURS →"
+  },
+  "destinations": {
+    "heroTitle": "WHERE TO NEXT?",
+    "heroCopy": "Escape the ordinary with our curated selection of global retreats. From the mist-covered peaks of Guilin to the serene temples of Kyoto, rediscover the art of wandering.",
+    "statsAria": "Destination statistics",
+    "stats": {
+      "tours": "CURATED TOURS",
+      "hubs": "GLOBAL HUBS",
+      "support": "LOCAL SUPPORT"
+    },
+    "viewExpedition": "VIEW EXPEDITION →",
+    "revealKicker": "EXCLUSIVE REVEAL",
+    "revealCopy": "Experience the caldera without the crowds. Our new nighttime journal explores the secret life of the Cyclades under the moonlight.",
+    "revealDate": "COMING FALL '24",
+    "revealDate": "COMING FALL '24",
+    "newsletterTitle": "THE WEEKLY JOURNAL",
+    "newsletterCopy": "Join 50,000+ explorers and receive curated travel stories, hidden destination guides, and exclusive early access to new tours.",
+    "emailPlaceholder": "YOUR EMAIL ADDRESS",
+    "emailAria": "Email address",
+    "subscribe": "SUBSCRIBE",
+    "quote": "“TRAVEL IS THE ONLY THING YOU BUY THAT MAKES YOU RICHER.”",
+    "quoteFooter": "— ANONYMOUS EXPLORER"
+  },
+  "tours": {
+    "kicker": "SEASON 2024",
+    "heroTitle": ["OUR CURATED", "TOURS"],
+    "heroCopy": "Beyond the standard routes. We've meticulously designed each journey to immerse you in the authentic soul of every destination, guided by those who call it home.",
+    "statLabel": "ACTIVE TOURS",
+    "filtersAria": "Tour filters",
+    "filters": [
+      "ALL EXPERIENCES",
+      "HIKING",
+      "CULTURAL",
+      "JEEP RIDE",
+      "GASTRONOMY"
+    ],
+    "duration": "DURATION",
+    "price": "PRICE",
+    "exploreTour": "EXPLORE TOUR →",
+    "customTitle": "CRAFT YOUR OWN JOURNEY",
+    "customCopy": "Can't find exactly what you're looking for? Our travel architects can design a completely bespoke itinerary tailored to your specific interests and pace.",
+    "customLink": "START CUSTOM INQUIRY →",
+    "ctaTitle": "READY FOR ADVENTURE?",
+    "ctaButton": "REQUEST GROUP QUOTE →"
+  },
+  "journal": {
+    "kicker": "VOLUME 04 / EDITORIAL SERIES",
+    "title": "TRAVEL TALES",
+    "heroCopy": "Immersive stories from the edge of the world, curated for those who seek the authentic, the hidden, and the sublime.",
+    "entriesLabel": "LATEST ENTRIES",
+    "tabsAria": "Journal categories",
+    "tabs": [
+      "ALL STORIES",
+      "HIDDEN GEMS",
+      "LOCAL GUIDES",
+      "TRAVEL TIPS"
+    ],
+    "moreLink": "DISCOVER MORE STORIES →",
+    "subscribeTitle": "JOIN OUR WEEKLY DISPATCH",
+    "subscribeCopy": "No spam, just curated travel inspiration, hidden location drops, and editorial tales delivered straight to your inbox every Sunday morning.",
+    "emailLabel": "EMAIL ADDRESS",
+    "emailAria": "Email address",
+    "subscribeButton": "SUBSCRIBE",
+    "checkbox": "I AGREE TO THE PRIVACY POLICY AND TERMS OF SERVICE.",
+    "quote": "“TRAVEL IS THE ONLY THING YOU BUY THAT MAKES YOU RICHER.”",
+    "quoteFooter": "THE LOCAL EXPLORER PHILOSOPHY",
+    "watermark": "LOCAL"
+  },
+  "detail": {
+    "back": "← BACK",
+    "exploreTourCta": "RESERVE THIS TOUR",
+    "readMoreCta": "READ FULL STORY",
+    "viewExpedition": "VIEW EXPEDITION",
+    "highlights": "HIGHLIGHTS",
+    "bestTime": "BEST TIME TO VISIT",
+    "duration": "DURATION",
+    "groupSize": "GROUP SIZE",
+    "startingFrom": "STARTING FROM",
+    "difficulty": "DIFFICULTY",
+    "stay": "WHERE YOU'LL STAY",
+    "stayPlaceholder": "Hand-picked boutique accommodations in keeping with the editorial spirit of the journey.",
+    "itinerary": "ITINERARY",
+    "stayBody": "Each property in our network is selected for its quiet character and proximity to the experiences that shape the route. Expect locally owned lodges, restored heritage houses, and design-forward hotels where the room is a place to rest, not retreat.",
+    "philosophy": "THE EDITORIAL TAKE",
+    "philosophyBody": "We built this route for travelers who measure a trip by the people met and the silence earned — not by the checklist completed. The pace is deliberate, the access is curated, and the moments are reserved for those who travel to feel something.",
+    "guide": "YOUR LOCAL GUIDE",
+    "guideBody": "A regional expert leads every departure. They are not tour managers — they are writers, photographers, and naturalists who have spent decades on the ground. They decide where to linger and when to move on, and they shape each day around what the landscape gives back.",
+    "goodToKnow": "GOOD TO KNOW",
+    "goodToKnowItems": [
+      "Small groups of up to 12 travelers",
+      "All ground transfers are included",
+      "Two local dinners are part of the program",
+      "Travel insurance is recommended"
+    ],
+    "byline": "BY",
+    "keepReading": "KEEP READING",
+    "tags": "TAGS",
+    "share": "SHARE",
+    "backToList": "← BACK TO {{section}}",
+    "loading": "Loading…",
+    "notFound": "We couldn't find that entry.",
+    "notFoundCta": "RETURN HOME"
+  }
+}
