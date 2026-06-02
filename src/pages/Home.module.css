@@ -382,7 +382,8 @@
 }
 
 .bandAction:hover {
-  background: var(--inverse-surface);
+  background: var(--on-primary);
+  color: var(--primary);
   transform: translateY(-1px);
 }
 
